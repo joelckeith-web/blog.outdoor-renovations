@@ -8,6 +8,7 @@ import type {
   ServiceBlogContext,
 } from "./types";
 import type { CityConfig } from "./site-config";
+import { getBlogFeaturedImage } from "./site-config";
 import {
   siteConfig,
   services,
@@ -571,7 +572,14 @@ export function parseGeneratedContent(
     weatherTriggered: options.weatherTriggered,
     weatherMode: options.weatherMode,
     weatherWeek: options.weatherWeek,
-    featuredImage: "",
+    featuredImage: getBlogFeaturedImage(
+      category || (options.primaryService as string) || "general",
+      slug
+    ).src,
+    featuredImageAlt: getBlogFeaturedImage(
+      category || (options.primaryService as string) || "general",
+      slug
+    ).alt,
     serviceAreaFooterLinks: options.geoFooterLinks.slice(0, 10),
     targetCity: targetCityName,
     postType,
@@ -623,6 +631,7 @@ weatherTriggered: ${fm.weatherTriggered}
 weatherMode: "${fm.weatherMode}"
 weatherWeek: "${fm.weatherWeek}"
 featuredImage: "${fm.featuredImage}"
+featuredImageAlt: "${escapeYaml(fm.featuredImageAlt)}"
 targetCity: "${fm.targetCity}"
 postType: "${fm.postType}"
 serviceAreaFooterLinks:

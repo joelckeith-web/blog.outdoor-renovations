@@ -132,6 +132,20 @@ export default async function BlogPostPage({ params }: PageProps) {
           </div>
         </header>
 
+        {/* Featured Image */}
+        {post.frontmatter.featuredImage && (
+          <div className="max-w-4xl mx-auto px-4 -mt-4">
+            <div className="relative aspect-[21/9] rounded-lg overflow-hidden shadow-lg">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`${siteConfig.mainSiteUrl}${post.frontmatter.featuredImage}`}
+                alt={post.frontmatter.featuredImageAlt || `${post.frontmatter.title} — Outdoor Renovations`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        )}
+
         {/* Post content */}
         <div className="max-w-4xl mx-auto px-4 py-10">
           <div className="lg:flex lg:gap-12">

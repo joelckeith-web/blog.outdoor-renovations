@@ -17,7 +17,8 @@ weatherMode: null
 weatherWeek: null
 metaTitle: "Outdoor Renovations Blog | Austin Landscape Tips"
 metaDescription: "Expert landscaping advice for Austin homeowners. Weather-informed tips for landscape design, hardscaping, irrigation, and property care across Central Texas."
-featuredImage: "/images/default-blog-hero.jpg"
+featuredImage: "/images/hero-drone-estate.jpg"
+featuredImageAlt: "Aerial view of a premium landscape renovation by Outdoor Renovations in Austin, Texas"
 schema:
   type: "BlogPosting"
   faqItems:

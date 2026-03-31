@@ -28,6 +28,7 @@ export interface BlogFrontmatter {
   weatherMode: WeatherMode;
   weatherWeek: string; // e.g. "March 24-30, 2026"
   featuredImage: string;
+  featuredImageAlt: string;
   serviceAreaFooterLinks: ServiceAreaLink[];
   targetCity: string; // city name for geo-targeting
   postType: "weather" | "service"; // generation source

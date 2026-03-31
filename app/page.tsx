@@ -89,13 +89,13 @@ export default async function HomePage() {
         )}
       </section>
 
-      {/* CTA section */}
-      <section className="bg-brand-accent-light">
+      {/* CTA section — cream bg with green accents */}
+      <section className="bg-brand-cream">
         <div className="max-w-7xl mx-auto px-4 py-12 text-center">
-          <h2 className="text-2xl font-bold text-brand-dark mb-3">
+          <h2 className="text-2xl font-heading font-extrabold text-brand-dark-secondary mb-3">
             Need Landscaping Service?
           </h2>
-          <p className="text-brand-text-secondary mb-6 max-w-2xl mx-auto">
+          <p className="text-brand-text-secondary mb-6 max-w-2xl mx-auto font-body">
             From landscape design to hardscaping and irrigation,{" "}
             {siteConfig.companyName} is your trusted local landscaping contractor in{" "}
             {siteConfig.primaryCity}, {siteConfig.primaryState}.
@@ -103,13 +103,13 @@ export default async function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={siteConfig.keyPages.contact}
-              className="btn-primary"
+              className="inline-block bg-brand-dark text-white font-semibold px-6 py-3 rounded-md hover:bg-brand-dark-secondary transition-colors"
             >
-              Get a Free Quote
+              Get a Consultation
             </a>
             <a
               href={`tel:${siteConfig.phoneRaw}`}
-              className="btn-secondary"
+              className="inline-block border-2 border-brand-dark text-brand-dark font-semibold px-6 py-3 rounded-md hover:bg-brand-dark hover:text-white transition-colors"
             >
               Call {siteConfig.phone}
             </a>

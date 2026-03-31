@@ -295,6 +295,76 @@ export const siteConfig = {
   },
 } as const;
 
+// ─── Blog Featured Image Map ─────────────────────────────────
+// Maps service categories to verified OR project images with descriptive alt text.
+// Images live on the main site domain. Each category has a primary + fallback.
+export const blogImageMap: Record<
+  string,
+  { src: string; alt: string }[]
+> = {
+  "landscape-design": [
+    { src: "/images/project-landscape.jpg", alt: "Professional landscape design project by Outdoor Renovations in Austin, Texas" },
+    { src: "/images/rendering-irle-6.jpg", alt: "3D landscape design rendering for an Austin residential property" },
+    { src: "/images/project-design-render.jpg", alt: "Landscape design concept rendering by Outdoor Renovations" },
+    { src: "/images/rendering-anstrom-2.jpg", alt: "Evening landscape design rendering with outdoor lighting" },
+  ],
+  hardscaping: [
+    { src: "/images/project-hardscape.jpg", alt: "Premium hardscaping project with natural stone in Austin, TX" },
+    { src: "/images/project-stonework.jpg", alt: "Custom stonework and patio installation by Outdoor Renovations" },
+    { src: "/images/project-walkway.jpg", alt: "Professional stone walkway installation in Central Texas" },
+    { src: "/images/project-corten-steps.jpg", alt: "Modern corten steel steps and hardscape design" },
+  ],
+  "custom-carpentry": [
+    { src: "/images/project-deck.jpg", alt: "Custom deck and pergola construction by Outdoor Renovations in Austin" },
+    { src: "/images/install-carpentry-hero.jpg", alt: "Professional outdoor carpentry installation in Central Texas" },
+    { src: "/images/install-pergola-detail.jpg", alt: "Custom pergola detail craftsmanship by Outdoor Renovations" },
+    { src: "/images/install-carpentry-crew.jpg", alt: "Outdoor Renovations carpentry crew building a custom structure" },
+  ],
+  "softscaping-planting": [
+    { src: "/images/project-planting.jpg", alt: "Expert softscaping and planting installation in Austin, Texas" },
+    { src: "/images/project-garden.jpg", alt: "Professionally designed garden with native Texas plantings" },
+    { src: "/images/maintain-garden.jpg", alt: "Lush garden landscape maintained by Outdoor Renovations" },
+  ],
+  "irrigation-drainage": [
+    { src: "/images/project-garden.jpg", alt: "Healthy irrigated landscape in Central Texas by Outdoor Renovations" },
+    { src: "/images/project-planting.jpg", alt: "Well-irrigated planting beds in an Austin residential landscape" },
+  ],
+  "landscape-lighting": [
+    { src: "/images/project-evening.jpg", alt: "Professional landscape lighting illuminating an Austin property at dusk" },
+    { src: "/images/install-landscape-lighting.jpg", alt: "Landscape lighting installation by Outdoor Renovations" },
+    { src: "/images/rendering-anstrom-2.jpg", alt: "Evening outdoor lighting design rendering" },
+  ],
+  "metal-fabrication": [
+    { src: "/images/project-corten-steps.jpg", alt: "Custom corten steel metalwork by Outdoor Renovations in Austin" },
+    { src: "/images/project-walkway.jpg", alt: "Metal and stone landscape features by Outdoor Renovations" },
+  ],
+  "property-management": [
+    { src: "/images/project-property-care.jpg", alt: "Professional property maintenance service in Austin, Texas" },
+    { src: "/images/maintain-garden.jpg", alt: "Ongoing landscape maintenance by Outdoor Renovations" },
+    { src: "/images/project-outdoor-living.jpg", alt: "Well-maintained outdoor living space in Central Texas" },
+  ],
+  general: [
+    { src: "/images/hero-drone-estate.jpg", alt: "Aerial view of a premium landscape renovation by Outdoor Renovations in Austin" },
+    { src: "/images/project-estate-1.jpg", alt: "Complete estate landscape by Outdoor Renovations in the Austin metro" },
+    { src: "/images/hero-estate-landscape.jpg", alt: "Premium residential landscape in Central Texas" },
+    { src: "/images/project-feature.jpg", alt: "Featured outdoor renovation project in Austin, Texas" },
+  ],
+};
+
+/**
+ * Get a featured image for a blog post based on its category.
+ * Uses a deterministic rotation based on the slug to vary images within a category.
+ */
+export function getBlogFeaturedImage(
+  category: string,
+  slug: string
+): { src: string; alt: string } {
+  const images = blogImageMap[category] || blogImageMap.general;
+  // Simple hash from slug to pick a consistent image
+  const hash = slug.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
+  return images[hash % images.length];
+}
+
 // ─── Services (with full descriptions for content generation) ──
 export const services: ServiceConfig[] = [
   {
