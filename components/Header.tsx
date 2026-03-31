@@ -34,7 +34,7 @@ export default function Header() {
               href={siteConfig.mainSiteUrl}
               className="flex items-center shrink-0"
             >
-              <span className="text-xl font-bold text-brand-dark">
+              <span className="font-heading font-extrabold text-xl md:text-2xl text-brand-dark-secondary tracking-tight">
                 Outdoor Renovations
               </span>
             </Link>

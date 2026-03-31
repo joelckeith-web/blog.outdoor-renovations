@@ -25,7 +25,7 @@ export default async function HomePage() {
       <section className="bg-brand-dark text-white">
         <div className="max-w-7xl mx-auto px-4 py-16 lg:py-20">
           <div className="max-w-3xl">
-            <h1 className="text-3xl lg:text-4xl font-bold mb-4">
+            <h1 className="text-3xl lg:text-4xl font-heading font-extrabold mb-4">
               Austin Landscaping Blog
             </h1>
             <p className="text-lg text-gray-300 mb-6">
