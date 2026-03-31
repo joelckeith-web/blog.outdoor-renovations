@@ -1,0 +1,18 @@
+{
+  "framework": "nextjs",
+  "installCommand": "npm install --legacy-peer-deps",
+  "crons": [
+    {
+      "path": "/api/cron/generate-weather-blog",
+      "schedule": "0 10 * * 1"
+    },
+    {
+      "path": "/api/cron/generate-weather-blog",
+      "schedule": "0 10 * * 4"
+    },
+    {
+      "path": "/api/cron/generate-service-blog",
+      "schedule": "0 10 * * 6"
+    }
+  ]
+}

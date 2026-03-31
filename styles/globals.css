@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-brand-text;
+  }
+}
+
+@layer components {
+  /* Key Takeaway callout blocks — matches SOP requirement */
+  .key-takeaway {
+    @apply my-8 rounded-lg border-l-4 border-brand-accent bg-brand-accent-light p-6;
+  }
+
+  .key-takeaway strong:first-child {
+    @apply block mb-2 text-brand-dark text-lg;
+  }
+
+  /* Blog prose overrides */
+  .prose h2 {
+    @apply mt-10 mb-4;
+  }
+
+  .prose h3 {
+    @apply mt-8 mb-3;
+  }
+
+  .prose a {
+    @apply text-brand-accent underline decoration-brand-accent/30 hover:decoration-brand-accent transition-colors;
+  }
+
+  .prose blockquote {
+    @apply border-l-4 border-brand-accent bg-gray-50 py-1 px-4 italic;
+  }
+
+  /* AI Summary Box — styled blockquote for AEO optimization */
+  .prose blockquote:first-of-type {
+    @apply not-italic rounded-lg border-l-4 border-brand-accent bg-brand-accent-light p-6 my-8;
+  }
+
+  .prose blockquote:first-of-type strong:first-child {
+    @apply block text-lg font-bold text-brand-dark mb-2;
+  }
+
+  .prose img {
+    @apply rounded-lg shadow-md;
+  }
+
+  /* FAQ section styling */
+  .faq-section details {
+    @apply border-b border-gray-200 py-4;
+  }
+
+  .faq-section details summary {
+    @apply cursor-pointer font-semibold text-brand-dark hover:text-brand-accent transition-colors list-none;
+  }
+
+  .faq-section details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-section details[open] summary {
+    @apply mb-2 text-brand-accent;
+  }
+
+  /* CTA buttons */
+  .btn-primary {
+    @apply inline-block bg-brand-accent text-white font-semibold px-6 py-3 rounded-md hover:bg-brand-accent-hover transition-colors;
+  }
+
+  .btn-secondary {
+    @apply inline-block border-2 border-brand-accent text-brand-accent font-semibold px-6 py-3 rounded-md hover:bg-brand-accent hover:text-white transition-colors;
+  }
+}
