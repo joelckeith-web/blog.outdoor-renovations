@@ -21,24 +21,25 @@ export default function PostCard({ post }: { post: BlogPost }) {
 
   return (
     <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group">
-      {/* Featured image placeholder */}
-      <div className="h-48 bg-gradient-to-br from-brand-dark to-brand-dark-secondary flex items-center justify-center">
-        {frontmatter.weatherTriggered && (
-          <div className="text-center text-white">
-            <svg
-              className="w-12 h-12 mx-auto mb-2 opacity-50"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={1.5}
-                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
-              />
-            </svg>
-            <span className="text-xs opacity-60">Weather Report</span>
+      {/* Featured image */}
+      <div className="h-48 overflow-hidden">
+        {frontmatter.featuredImage ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={`https://outdoor-renovations.vercel.app${frontmatter.featuredImage}`}
+            alt={frontmatter.featuredImageAlt || frontmatter.title}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-brand-dark to-brand-dark-secondary flex items-center justify-center">
+            {frontmatter.weatherTriggered && (
+              <div className="text-center text-white">
+                <svg className="w-12 h-12 mx-auto mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                </svg>
+                <span className="text-xs opacity-60">Weather Report</span>
+              </div>
+            )}
           </div>
         )}
       </div>
