@@ -1,9 +1,11 @@
-name: Weekly Weather Blog Post
+name: Weekly Weather Blog Posts
 
 on:
   schedule:
-    # Every Monday at 6 AM CT (12 PM UTC)
+    # Monday 6 AM CT (12 PM UTC) — Post 1
     - cron: '0 12 * * 1'
+    # Thursday 6 AM CT (12 PM UTC) — Post 2
+    - cron: '0 12 * * 4'
   workflow_dispatch:
     inputs:
       city:
