@@ -1,0 +1,65 @@
+name: Weekly Weather Blog Post
+
+on:
+  schedule:
+    # Every Monday at 6 AM CT (12 PM UTC)
+    - cron: '0 12 * * 1'
+  workflow_dispatch:
+    inputs:
+      city:
+        description: 'Override target city (optional)'
+        required: false
+        type: string
+      dry_run:
+        description: 'Generate locally only (no push)'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate-weather-post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate weather blog post
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_OWNER: joelckeith-web
+          GITHUB_REPO: blog.outdoor-renovations
+          GITHUB_BRANCH: main
+        run: |
+          ARGS="--type weather"
+          if [ -n "${{ inputs.city }}" ]; then
+            ARGS="$ARGS --city '${{ inputs.city }}'"
+          fi
+          if [ "${{ inputs.dry_run }}" != "true" ]; then
+            ARGS="$ARGS --push"
+          fi
+          echo "Running: npx tsx scripts/generate-blog.ts $ARGS"
+          npx tsx scripts/generate-blog.ts $ARGS
+
+      - name: Log result
+        if: success()
+        run: |
+          echo "✅ Weather blog post generated and published"
+          echo "Posts in repo:"
+          ls -la content/posts/ | tail -5
