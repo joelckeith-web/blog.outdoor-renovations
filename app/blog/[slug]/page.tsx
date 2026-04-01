@@ -76,26 +76,6 @@ export default async function BlogPostPage({ params }: PageProps) {
         {/* Post header */}
         <header className="bg-brand-dark text-white">
           <div className="max-w-4xl mx-auto px-4 py-12 lg:py-16">
-            {/* Breadcrumb */}
-            <nav className="text-sm text-gray-400 mb-6">
-              <a
-                href={siteConfig.mainSiteUrl}
-                className="hover:text-brand-accent transition-colors"
-              >
-                Home
-              </a>
-              <span className="mx-2">/</span>
-              <Link
-                href="/"
-                className="hover:text-brand-accent transition-colors"
-              >
-                Blog
-              </Link>
-              <span className="mx-2">/</span>
-              <span className="text-gray-300 capitalize">
-                {post.frontmatter.category.replace(/-/g, " ")}
-              </span>
-            </nav>
 
             {/* Meta info */}
             <div className="flex flex-wrap items-center gap-3 mb-4">
@@ -138,7 +118,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             <div className="relative aspect-[21/9] rounded-lg overflow-hidden shadow-lg">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={`${siteConfig.mainSiteUrl}${post.frontmatter.featuredImage}`}
+                src={`https://outdoor-renovations.vercel.app${post.frontmatter.featuredImage}`}
                 alt={post.frontmatter.featuredImageAlt || `${post.frontmatter.title} — Outdoor Renovations`}
                 className="w-full h-full object-cover"
               />
@@ -238,7 +218,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                     Need Help?
                   </h3>
                   <p className="text-sm text-gray-300 mb-4">
-                    Call us for a free landscaping consultation.
+                    Call us for a landscaping consultation.
                   </p>
                   <a
                     href={`tel:${siteConfig.phoneRaw}`}
