@@ -15,13 +15,30 @@
 }
 
 @layer components {
-  /* Key Takeaway callout blocks — matches SOP requirement */
+  /*
+   * ══════════════════════════════════════════════════════════════
+   * HARD RULE: CONTRAST & COLOR STANDARDS
+   * ══════════════════════════════════════════════════════════════
+   * - NEVER use dark text on medium/sage green backgrounds
+   * - Green backgrounds (#6B8F7B or similar) MUST use white text
+   * - Dark backgrounds (#2D4A3E, #1B3128) MUST use white text
+   * - Light backgrounds (#F7F5F0, #F0EBE3, white) use dark text
+   * - Minimum contrast ratio: 4.5:1 (WCAG AA)
+   * - When in doubt: dark bg = white text, light bg = dark text
+   * ══════════════════════════════════════════════════════════════
+   */
+
+  /* Key Takeaway callout blocks — dark bg, white text */
   .key-takeaway {
-    @apply my-8 rounded-lg border-l-4 border-brand-accent bg-brand-accent-light p-6;
+    @apply my-8 rounded-lg border-l-4 border-white/20 bg-brand-dark p-6 text-white;
   }
 
   .key-takeaway strong:first-child {
-    @apply block mb-2 text-brand-dark text-lg;
+    @apply block mb-2 text-white text-lg;
+  }
+
+  .key-takeaway p {
+    @apply text-gray-200;
   }
 
   /* Blog prose overrides */
@@ -41,13 +58,17 @@
     @apply border-l-4 border-brand-accent bg-gray-50 py-1 px-4 italic;
   }
 
-  /* AI Summary Box — styled blockquote for AEO optimization */
+  /* AI Summary Box — dark bg, white text for contrast */
   .prose blockquote:first-of-type {
-    @apply not-italic rounded-lg border-l-4 border-brand-accent bg-brand-accent-light p-6 my-8;
+    @apply not-italic rounded-lg border-l-4 border-white/20 bg-brand-dark text-white p-6 my-8;
   }
 
   .prose blockquote:first-of-type strong:first-child {
-    @apply block text-lg font-bold text-brand-dark mb-2;
+    @apply block text-lg font-bold text-white mb-2;
+  }
+
+  .prose blockquote:first-of-type p {
+    @apply text-gray-200;
   }
 
   .prose img {
