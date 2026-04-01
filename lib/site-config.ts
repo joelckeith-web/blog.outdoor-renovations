@@ -22,7 +22,7 @@ export const siteConfig = {
   motto: "Renovating Outdoor Dreams to Reality",
   description:
     "Licensed landscape contractor serving Austin Metro & Central Texas since 2010. 200+ completed projects with a 5-star rating. Custom landscape design, hardscaping, carpentry, irrigation, lighting, and property management for residential and commercial clients.",
-  reviews: "200+ 5-Star Reviews",
+  reviews: "5-Star Rated",
   averageRating: "5.0",
 
   // Key landscaping facts for content generation
