@@ -158,6 +158,19 @@ STRICT CONTENT RULES (Core Content Creation SOP):
 11. Include a CTA paragraph at the end with phone number ${siteConfig.phone}.
 12. Write in a professional but approachable tone -- like a knowledgeable neighbor.
 
+READING LEVEL & NATURAL LANGUAGE REQUIREMENTS:
+- Target a 7th-grade reading level (Flesch-Kincaid Grade Level 7). This is NON-NEGOTIABLE.
+- Use short, direct sentences. Average sentence length: 12-18 words. Break up any sentence longer than 25 words.
+- Use common everyday words. Say "use" not "utilize." Say "fix" not "remediate." Say "check" not "evaluate." Say "pick" not "select." Say "dirt" or "soil" not "substrate."
+- Technical terms are allowed ONLY when they are the actual industry term a homeowner would encounter (e.g., "French drain," "drip irrigation," "retaining wall"). When you use a technical term, immediately explain it in plain language.
+- Write the way a friendly, experienced contractor talks to a homeowner on-site — clear, confident, no jargon for the sake of sounding smart.
+- Vary sentence structure naturally. Mix short punchy sentences with slightly longer ones. Do NOT write in a robotic pattern.
+- Use contractions naturally: "don't" not "do not," "we'll" not "we will," "it's" not "it is" — unless emphasis requires the full form.
+- Avoid passive voice. Say "We build retaining walls" not "Retaining walls are built by our team."
+- Avoid academic or corporate language: no "furthermore," "in conclusion," "it is important to note that," "one should consider," or "leveraging."
+- Paragraphs should be 2-4 sentences max. Wall-of-text paragraphs kill readability.
+- The content must sound like it was written by a REAL PERSON with dirt under their fingernails — not by an AI or a marketing agency.
+
 E-E-A-T AUTHORITY REQUIREMENTS (non-negotiable):
 13. Write as a SUBJECT MATTER EXPERT, not a generalist. Demonstrate deep technical knowledge of materials, methods, soil science, plant biology, drainage engineering, and construction techniques specific to Central Texas.
 14. Include SPECIFIC technical details: soil pH ranges, compaction PSI requirements, root zone depths, material thermal expansion coefficients, drainage slope ratios, plant hardiness zones (8b for Austin), irrigation GPM calculations — whatever is relevant to the topic.
@@ -366,6 +379,19 @@ STRICT CONTENT RULES (Core Content Creation SOP):
 10. Tie content to the current ${season} season -- what makes this service relevant NOW.
 11. Include a CTA paragraph at the end with phone number ${siteConfig.phone}.
 12. Write in a professional but approachable tone -- like a knowledgeable neighbor.
+
+READING LEVEL & NATURAL LANGUAGE REQUIREMENTS:
+- Target a 7th-grade reading level (Flesch-Kincaid Grade Level 7). This is NON-NEGOTIABLE.
+- Use short, direct sentences. Average sentence length: 12-18 words. Break up any sentence longer than 25 words.
+- Use common everyday words. Say "use" not "utilize." Say "fix" not "remediate." Say "check" not "evaluate." Say "pick" not "select." Say "dirt" or "soil" not "substrate."
+- Technical terms are allowed ONLY when they are the actual industry term a homeowner would encounter (e.g., "French drain," "drip irrigation," "retaining wall"). When you use a technical term, immediately explain it in plain language.
+- Write the way a friendly, experienced contractor talks to a homeowner on-site — clear, confident, no jargon for the sake of sounding smart.
+- Vary sentence structure naturally. Mix short punchy sentences with slightly longer ones. Do NOT write in a robotic pattern.
+- Use contractions naturally: "don't" not "do not," "we'll" not "we will," "it's" not "it is" — unless emphasis requires the full form.
+- Avoid passive voice. Say "We build retaining walls" not "Retaining walls are built by our team."
+- Avoid academic or corporate language: no "furthermore," "in conclusion," "it is important to note that," "one should consider," or "leveraging."
+- Paragraphs should be 2-4 sentences max. Wall-of-text paragraphs kill readability.
+- The content must sound like it was written by a REAL PERSON with dirt under their fingernails — not by an AI or a marketing agency.
 
 E-E-A-T AUTHORITY REQUIREMENTS (non-negotiable):
 13. Write as a SUBJECT MATTER EXPERT with deep technical knowledge of "${serviceName}". Go beyond surface-level advice — demonstrate the kind of expertise that only comes from 16+ years of hands-on work in Central Texas.
