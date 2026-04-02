@@ -298,6 +298,7 @@ export const siteConfig = {
 // ─── Blog Featured Image Map ─────────────────────────────────
 // Maps service categories to verified OR project images with descriptive alt text.
 // Images live on the main site domain. Each category has a primary + fallback.
+// HARD RULE: Every image appears in EXACTLY ONE category. No cross-category duplicates.
 export const blogImageMap: Record<
   string,
   { src: string; alt: string }[]
@@ -305,49 +306,51 @@ export const blogImageMap: Record<
   "landscape-design": [
     { src: "/images/project-landscape.jpg", alt: "Professional landscape design project by Outdoor Renovations in Austin, Texas" },
     { src: "/images/rendering-irle-6.jpg", alt: "3D landscape design rendering for an Austin residential property" },
-    { src: "/images/project-design-render.jpg", alt: "Landscape design concept rendering by Outdoor Renovations" },
-    { src: "/images/rendering-anstrom-2.jpg", alt: "Evening landscape design rendering with outdoor lighting" },
+    { src: "/images/rendering-irle-3.jpg", alt: "Aerial landscape design plan view by Outdoor Renovations" },
+    { src: "/images/rendering-erwin-3.jpg", alt: "Modern outdoor living space design rendering" },
   ],
   hardscaping: [
     { src: "/images/project-hardscape.jpg", alt: "Premium hardscaping project with natural stone in Austin, TX" },
     { src: "/images/project-stonework.jpg", alt: "Custom stonework and patio installation by Outdoor Renovations" },
     { src: "/images/project-walkway.jpg", alt: "Professional stone walkway installation in Central Texas" },
-    { src: "/images/project-corten-steps.jpg", alt: "Modern corten steel steps and hardscape design" },
+    { src: "/images/install-patio-pool.jpg", alt: "Concrete patio and pool installation in Austin" },
   ],
   "custom-carpentry": [
-    { src: "/images/project-deck.jpg", alt: "Custom deck and pergola construction by Outdoor Renovations in Austin" },
     { src: "/images/install-carpentry-hero.jpg", alt: "Professional outdoor carpentry installation in Central Texas" },
     { src: "/images/install-pergola-detail.jpg", alt: "Custom pergola detail craftsmanship by Outdoor Renovations" },
-    { src: "/images/install-carpentry-crew.jpg", alt: "Outdoor Renovations carpentry crew building a custom structure" },
+    { src: "/images/install-outdoor-kitchen.jpg", alt: "Outdoor kitchen with cedar screening by Outdoor Renovations" },
+    { src: "/images/install-pool-pergola.jpg", alt: "Pool-side pergola and outdoor living structure in Austin" },
   ],
   "softscaping-planting": [
     { src: "/images/project-planting.jpg", alt: "Expert softscaping and planting installation in Austin, Texas" },
     { src: "/images/project-garden.jpg", alt: "Professionally designed garden with native Texas plantings" },
-    { src: "/images/maintain-garden.jpg", alt: "Lush garden landscape maintained by Outdoor Renovations" },
+    { src: "/images/rendering-anstrom-5.jpg", alt: "Landscape planting design for a Central Texas property" },
   ],
   "irrigation-drainage": [
-    { src: "/images/project-garden.jpg", alt: "Healthy irrigated landscape in Central Texas by Outdoor Renovations" },
-    { src: "/images/project-planting.jpg", alt: "Well-irrigated planting beds in an Austin residential landscape" },
+    { src: "/images/maintain-garden.jpg", alt: "Healthy irrigated landscape in Central Texas by Outdoor Renovations" },
+    { src: "/images/rendering-irle-8.jpg", alt: "Landscape irrigation and drainage design plan" },
+    { src: "/images/rendering-irle-4.jpg", alt: "Property drainage and irrigation layout rendering" },
   ],
   "landscape-lighting": [
     { src: "/images/project-evening.jpg", alt: "Professional landscape lighting illuminating an Austin property at dusk" },
     { src: "/images/install-landscape-lighting.jpg", alt: "Landscape lighting installation by Outdoor Renovations" },
-    { src: "/images/rendering-anstrom-2.jpg", alt: "Evening outdoor lighting design rendering" },
+    { src: "/images/rendering-anstrom-2.jpg", alt: "Evening outdoor lighting design rendering with accent lighting" },
   ],
   "metal-fabrication": [
     { src: "/images/project-corten-steps.jpg", alt: "Custom corten steel metalwork by Outdoor Renovations in Austin" },
-    { src: "/images/project-walkway.jpg", alt: "Metal and stone landscape features by Outdoor Renovations" },
+    { src: "/images/install-plans-review.jpg", alt: "Kyle Stoutenger reviewing custom fabrication plans on site" },
+    { src: "/images/rendering-irle-10.jpg", alt: "Metal and landscape integration design for Austin properties" },
   ],
   "property-management": [
-    { src: "/images/project-property-care.jpg", alt: "Professional property maintenance service in Austin, Texas" },
-    { src: "/images/maintain-garden.jpg", alt: "Ongoing landscape maintenance by Outdoor Renovations" },
     { src: "/images/project-outdoor-living.jpg", alt: "Well-maintained outdoor living space in Central Texas" },
+    { src: "/images/project-deck.jpg", alt: "Maintained deck and outdoor structure by Outdoor Renovations" },
+    { src: "/images/install-carpentry-crew.jpg", alt: "Outdoor Renovations crew maintaining a residential property" },
   ],
   general: [
     { src: "/images/hero-drone-estate.jpg", alt: "Aerial view of a premium landscape renovation by Outdoor Renovations in Austin" },
-    { src: "/images/project-estate-1.jpg", alt: "Complete estate landscape by Outdoor Renovations in the Austin metro" },
     { src: "/images/hero-estate-landscape.jpg", alt: "Premium residential landscape in Central Texas" },
-    { src: "/images/project-feature.jpg", alt: "Featured outdoor renovation project in Austin, Texas" },
+    { src: "/images/hero-aerial.jpg", alt: "Aerial view of completed outdoor renovation in Austin" },
+    { src: "/images/rendering-anstrom-4.jpg", alt: "Outdoor Renovations landscape project in the Austin metro" },
   ],
 };
 
