@@ -51,7 +51,7 @@ jobs:
         run: |
           ARGS="--type weather"
           if [ -n "${{ inputs.city }}" ]; then
-            ARGS="$ARGS --city '${{ inputs.city }}'"
+            ARGS="$ARGS --city ${{ inputs.city }}"
           fi
           if [ "${{ inputs.dry_run }}" != "true" ]; then
             ARGS="$ARGS --push"
