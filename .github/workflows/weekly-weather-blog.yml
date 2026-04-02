@@ -49,15 +49,17 @@ jobs:
           GITHUB_REPO: blog.outdoor-renovations
           GITHUB_BRANCH: main
         run: |
-          ARGS="--type weather"
-          if [ -n "${{ inputs.city }}" ]; then
-            ARGS="$ARGS --city ${{ inputs.city }}"
+          CITY_INPUT="${{ inputs.city }}"
+          DRY_RUN="${{ inputs.dry_run }}"
+          CMD="npx tsx scripts/generate-blog.ts --type weather"
+          if [ -n "$CITY_INPUT" ]; then
+            CMD="$CMD --city \"$CITY_INPUT\""
           fi
-          if [ "${{ inputs.dry_run }}" != "true" ]; then
-            ARGS="$ARGS --push"
+          if [ "$DRY_RUN" != "true" ]; then
+            CMD="$CMD --push"
           fi
-          echo "Running: npx tsx scripts/generate-blog.ts $ARGS"
-          npx tsx scripts/generate-blog.ts $ARGS
+          echo "Running: $CMD"
+          eval $CMD
 
       - name: Log result
         if: success()
