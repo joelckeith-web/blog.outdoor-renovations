@@ -53,10 +53,10 @@ jobs:
         run: |
           ARGS="--type service"
           if [ -n "${{ inputs.service }}" ]; then
-            ARGS="$ARGS --service '${{ inputs.service }}'"
+            ARGS="$ARGS --service ${{ inputs.service }}"
           fi
           if [ -n "${{ inputs.city }}" ]; then
-            ARGS="$ARGS --city '${{ inputs.city }}'"
+            ARGS="$ARGS --city ${{ inputs.city }}"
           fi
           if [ "${{ inputs.dry_run }}" != "true" ]; then
             ARGS="$ARGS --push"
