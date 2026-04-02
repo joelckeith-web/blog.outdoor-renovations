@@ -51,18 +51,21 @@ jobs:
           GITHUB_REPO: blog.outdoor-renovations
           GITHUB_BRANCH: main
         run: |
-          ARGS="--type service"
-          if [ -n "${{ inputs.service }}" ]; then
-            ARGS="$ARGS --service ${{ inputs.service }}"
+          SERVICE_INPUT="${{ inputs.service }}"
+          CITY_INPUT="${{ inputs.city }}"
+          DRY_RUN="${{ inputs.dry_run }}"
+          CMD="npx tsx scripts/generate-blog.ts --type service"
+          if [ -n "$SERVICE_INPUT" ]; then
+            CMD="$CMD --service \"$SERVICE_INPUT\""
           fi
-          if [ -n "${{ inputs.city }}" ]; then
-            ARGS="$ARGS --city ${{ inputs.city }}"
+          if [ -n "$CITY_INPUT" ]; then
+            CMD="$CMD --city \"$CITY_INPUT\""
           fi
-          if [ "${{ inputs.dry_run }}" != "true" ]; then
-            ARGS="$ARGS --push"
+          if [ "$DRY_RUN" != "true" ]; then
+            CMD="$CMD --push"
           fi
-          echo "Running: npx tsx scripts/generate-blog.ts $ARGS"
-          npx tsx scripts/generate-blog.ts $ARGS
+          echo "Running: $CMD"
+          eval $CMD
 
       - name: Log result
         if: success()
