@@ -21,7 +21,7 @@ export const siteConfig = {
   tagline: "Design | Landscape | Maintain",
   motto: "Renovating Outdoor Dreams to Reality",
   description:
-    "Licensed landscape contractor serving Austin Metro & Central Texas since 2010. 200+ completed projects with a 5-star rating. Custom landscape design, hardscaping, carpentry, irrigation, lighting, and property management for residential and commercial clients.",
+    "Licensed general contractor serving Austin Metro & Central Texas since 2010. 200+ completed projects with a 5-star rating. Custom landscape design, hardscaping, carpentry, irrigation, lighting, and property management for residential and commercial clients.",
   reviews: "200+ 5-Star Reviews",
   averageRating: "5.0",
 
@@ -46,10 +46,10 @@ export const siteConfig = {
 
   foundedYear: 2010,
   ownerName: "Kyle Stoutenger",
-  ownerTitle: "Owner & Licensed Landscape Contractor",
+  ownerTitle: "Owner & Licensed General Contractor",
   projectsCompleted: "200+",
   certifications: [
-    "Licensed Landscape Contractor",
+    "Licensed General Contractor",
     "Fully Bonded & Insured",
     "1-Year Service Guarantee",
   ],
@@ -59,21 +59,21 @@ export const siteConfig = {
   phone: "(512) 743-0570",
   phoneRaw: "+15127430570",
   address: {
-    street: "1108 Hollybluff St",
-    city: "Kyle",
+    street: "1802 Benchmark Dr",
+    city: "Austin",
     state: "Texas",
     stateAbbr: "TX",
-    zip: "78640",
+    zip: "78728",
     country: "US",
   },
 
   // Credentials
-  license: "Licensed Landscape Contractor — State of Texas",
+  license: "Licensed General Contractor — State of Texas",
 
   // Founder / Owner (for schema)
   founder: {
     name: "Kyle Stoutenger",
-    jobTitle: "Owner & Licensed Landscape Contractor",
+    jobTitle: "Owner & Licensed General Contractor",
   },
 
   // Opening hours (for schema)
