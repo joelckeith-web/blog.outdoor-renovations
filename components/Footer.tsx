@@ -17,7 +17,7 @@ export default function Footer() {
                 </span>
               </a>
               <p className="text-brand-text-secondary text-sm leading-relaxed mb-4">
-                Licensed General Contractor serving Austin &amp; Central Texas
+                Licensed Landscape Contractor serving Austin &amp; Central Texas
                 since 2010. {siteConfig.reviews}.
               </p>
               <div className="flex space-x-4">

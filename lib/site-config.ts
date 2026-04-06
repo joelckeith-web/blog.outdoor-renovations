@@ -21,7 +21,7 @@ export const siteConfig = {
   tagline: "Design | Landscape | Maintain",
   motto: "Renovating Outdoor Dreams to Reality",
   description:
-    "Licensed general contractor serving Austin Metro & Central Texas since 2010. 200+ completed projects with a 5-star rating. Custom landscape design, hardscaping, carpentry, irrigation, lighting, and property management for residential and commercial clients.",
+    "Licensed landscape contractor serving Austin Metro & Central Texas since 2010. 200+ completed projects with a 5-star rating. Custom landscape design, hardscaping, carpentry, irrigation, lighting, and property management for residential and commercial clients.",
   reviews: "5-Star Rated",
   averageRating: "5.0",
 
@@ -46,10 +46,10 @@ export const siteConfig = {
 
   foundedYear: 2010,
   ownerName: "Kyle Stoutenger",
-  ownerTitle: "Owner & Licensed General Contractor",
+  ownerTitle: "Owner & Licensed Landscape Contractor",
   projectsCompleted: "200+",
   certifications: [
-    "Licensed General Contractor",
+    "Licensed Landscape Contractor",
     "Fully Bonded & Insured",
     "1-Year Service Guarantee",
   ],
@@ -68,12 +68,12 @@ export const siteConfig = {
   },
 
   // Credentials
-  license: "Licensed General Contractor — State of Texas",
+  license: "Licensed Landscape Contractor — State of Texas",
 
   // Founder / Owner (for schema)
   founder: {
     name: "Kyle Stoutenger",
-    jobTitle: "Owner & Licensed General Contractor",
+    jobTitle: "Owner & Licensed Landscape Contractor",
   },
 
   // Opening hours (for schema)
