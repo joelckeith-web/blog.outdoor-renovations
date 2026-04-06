@@ -90,7 +90,7 @@ export default function Header() {
                 href={siteConfig.keyPages.contact}
                 className="ml-4 btn-primary text-sm"
               >
-                Get a Free Quote
+                Get a Quote
               </a>
             </nav>
 
@@ -136,7 +136,7 @@ export default function Header() {
                 href={siteConfig.keyPages.contact}
                 className="block mt-4 btn-primary text-center text-sm"
               >
-                Get a Free Quote
+                Get a Quote
               </a>
             </div>
           </div>

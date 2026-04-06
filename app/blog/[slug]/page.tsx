@@ -76,26 +76,6 @@ export default async function BlogPostPage({ params }: PageProps) {
         {/* Post header */}
         <header className="bg-brand-dark text-white">
           <div className="max-w-4xl mx-auto px-4 py-12 lg:py-16">
-            {/* Breadcrumb */}
-            <nav className="text-sm text-gray-400 mb-6">
-              <a
-                href={siteConfig.mainSiteUrl}
-                className="hover:text-brand-accent transition-colors"
-              >
-                Home
-              </a>
-              <span className="mx-2">/</span>
-              <Link
-                href="/"
-                className="hover:text-brand-accent transition-colors"
-              >
-                Blog
-              </Link>
-              <span className="mx-2">/</span>
-              <span className="text-gray-300 capitalize">
-                {post.frontmatter.category.replace(/-/g, " ")}
-              </span>
-            </nav>
 
             {/* Meta info */}
             <div className="flex flex-wrap items-center gap-3 mb-4">
@@ -138,7 +118,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             <div className="relative aspect-[21/9] rounded-lg overflow-hidden shadow-lg">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={`${siteConfig.mainSiteUrl}${post.frontmatter.featuredImage}`}
+                src={`https://outdoor-renovations.vercel.app${post.frontmatter.featuredImage}`}
                 alt={post.frontmatter.featuredImageAlt || `${post.frontmatter.title} — Outdoor Renovations`}
                 className="w-full h-full object-cover"
               />
@@ -189,11 +169,11 @@ export default async function BlogPostPage({ params }: PageProps) {
               )}
 
               {/* CTA */}
-              <div className="mt-12 bg-brand-accent-light rounded-lg p-8 text-center">
-                <h3 className="text-xl font-bold text-brand-dark mb-2">
+              <div className="mt-12 bg-brand-dark rounded-lg p-8 text-center">
+                <h3 className="text-xl font-bold text-white mb-2">
                   Need Landscaping Service in {siteConfig.primaryCity}?
                 </h3>
-                <p className="text-brand-text-secondary mb-4">
+                <p className="text-gray-300 mb-4">
                   Contact {siteConfig.companyName} today for{" "}
                   {post.frontmatter.category.replace(/-/g, " ")} services in{" "}
                   {siteConfig.primaryCity}, {siteConfig.primaryState}.
@@ -201,13 +181,13 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a
                     href={siteConfig.keyPages.contact}
-                    className="btn-primary"
+                    className="inline-block bg-white text-brand-dark font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors"
                   >
-                    Get a Free Quote
+                    Get a Quote
                   </a>
                   <a
                     href={`tel:${siteConfig.phoneRaw}`}
-                    className="btn-secondary"
+                    className="inline-block border-2 border-white text-white font-bold px-6 py-3 rounded-lg hover:bg-white hover:text-brand-dark transition-colors"
                   >
                     Call {siteConfig.phone}
                   </a>
@@ -238,7 +218,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                     Need Help?
                   </h3>
                   <p className="text-sm text-gray-300 mb-4">
-                    Call us for a free landscaping consultation.
+                    Call us for a landscaping consultation.
                   </p>
                   <a
                     href={`tel:${siteConfig.phoneRaw}`}

@@ -158,6 +158,29 @@ STRICT CONTENT RULES (Core Content Creation SOP):
 11. Include a CTA paragraph at the end with phone number ${siteConfig.phone}.
 12. Write in a professional but approachable tone -- like a knowledgeable neighbor.
 
+READING LEVEL & NATURAL LANGUAGE REQUIREMENTS:
+- Target a 7th-grade reading level (Flesch-Kincaid Grade Level 7). This is NON-NEGOTIABLE.
+- Use short, direct sentences. Average sentence length: 12-18 words. Break up any sentence longer than 25 words.
+- Use common everyday words. Say "use" not "utilize." Say "fix" not "remediate." Say "check" not "evaluate." Say "pick" not "select." Say "dirt" or "soil" not "substrate."
+- Technical terms are allowed ONLY when they are the actual industry term a homeowner would encounter (e.g., "French drain," "drip irrigation," "retaining wall"). When you use a technical term, immediately explain it in plain language.
+- Write the way a friendly, experienced contractor talks to a homeowner on-site — clear, confident, no jargon for the sake of sounding smart.
+- Vary sentence structure naturally. Mix short punchy sentences with slightly longer ones. Do NOT write in a robotic pattern.
+- Use contractions naturally: "don't" not "do not," "we'll" not "we will," "it's" not "it is" — unless emphasis requires the full form.
+- Avoid passive voice. Say "We build retaining walls" not "Retaining walls are built by our team."
+- Avoid academic or corporate language: no "furthermore," "in conclusion," "it is important to note that," "one should consider," or "leveraging."
+- Paragraphs should be 2-4 sentences max. Wall-of-text paragraphs kill readability.
+- The content must sound like it was written by a REAL PERSON with dirt under their fingernails — not by an AI or a marketing agency.
+
+E-E-A-T AUTHORITY REQUIREMENTS (non-negotiable):
+13. Write as a SUBJECT MATTER EXPERT, not a generalist. Demonstrate deep technical knowledge of materials, methods, soil science, plant biology, drainage engineering, and construction techniques specific to Central Texas.
+14. Include SPECIFIC technical details: soil pH ranges, compaction PSI requirements, root zone depths, material thermal expansion coefficients, drainage slope ratios, plant hardiness zones (8b for Austin), irrigation GPM calculations — whatever is relevant to the topic.
+15. Reference REAL industry standards: ISA tree protection protocols, ASTM paver specifications, EPA WaterSense guidelines, TCEQ regulations, City of Austin development code requirements.
+16. Include at least ONE "pro tip" or "contractor insight" that only someone with 16+ years of field experience would know — something a homeowner cannot find on a generic blog.
+17. Explain the WHY behind recommendations, not just the WHAT. For example: don't just say "mulch 3-4 inches deep" — explain that 3-4 inches is the optimal range because less allows weed germination and UV soil damage, while more can create moisture retention that promotes crown rot in native species.
+18. Reference Kyle Stoutenger's direct experience by name at least once: "Kyle Stoutenger, Licensed Landscape Contractor and owner of ${siteConfig.companyName}, recommends..." or "In ${siteConfig.ownerName}'s 16+ years working across ${siteConfig.serviceArea}..."
+19. Compare approaches: when discussing a technique or material, briefly mention alternatives and explain WHY the recommended approach is superior for Central Texas conditions specifically.
+20. Include quantifiable outcomes where possible: water savings percentages, temperature reductions from shade structures, property value impact, project timeline ranges — all must be verifiable or industry-standard figures, never fabricated.
+
 CRITICAL -- IMMEDIATE ACTION SUMMARY BOX:
 Your FIRST content after the intro paragraph MUST be a summary box block formatted EXACTLY like this:
 
@@ -356,6 +379,29 @@ STRICT CONTENT RULES (Core Content Creation SOP):
 10. Tie content to the current ${season} season -- what makes this service relevant NOW.
 11. Include a CTA paragraph at the end with phone number ${siteConfig.phone}.
 12. Write in a professional but approachable tone -- like a knowledgeable neighbor.
+
+READING LEVEL & NATURAL LANGUAGE REQUIREMENTS:
+- Target a 7th-grade reading level (Flesch-Kincaid Grade Level 7). This is NON-NEGOTIABLE.
+- Use short, direct sentences. Average sentence length: 12-18 words. Break up any sentence longer than 25 words.
+- Use common everyday words. Say "use" not "utilize." Say "fix" not "remediate." Say "check" not "evaluate." Say "pick" not "select." Say "dirt" or "soil" not "substrate."
+- Technical terms are allowed ONLY when they are the actual industry term a homeowner would encounter (e.g., "French drain," "drip irrigation," "retaining wall"). When you use a technical term, immediately explain it in plain language.
+- Write the way a friendly, experienced contractor talks to a homeowner on-site — clear, confident, no jargon for the sake of sounding smart.
+- Vary sentence structure naturally. Mix short punchy sentences with slightly longer ones. Do NOT write in a robotic pattern.
+- Use contractions naturally: "don't" not "do not," "we'll" not "we will," "it's" not "it is" — unless emphasis requires the full form.
+- Avoid passive voice. Say "We build retaining walls" not "Retaining walls are built by our team."
+- Avoid academic or corporate language: no "furthermore," "in conclusion," "it is important to note that," "one should consider," or "leveraging."
+- Paragraphs should be 2-4 sentences max. Wall-of-text paragraphs kill readability.
+- The content must sound like it was written by a REAL PERSON with dirt under their fingernails — not by an AI or a marketing agency.
+
+E-E-A-T AUTHORITY REQUIREMENTS (non-negotiable):
+13. Write as a SUBJECT MATTER EXPERT with deep technical knowledge of "${serviceName}". Go beyond surface-level advice — demonstrate the kind of expertise that only comes from 16+ years of hands-on work in Central Texas.
+14. Include SPECIFIC technical details relevant to "${serviceName}": material specifications, engineering tolerances, installation methodologies, manufacturer requirements, code compliance details, failure mode analysis — whatever establishes undeniable expertise.
+15. Reference REAL industry standards and regulatory bodies: ISA, ASTM, EPA WaterSense, TCEQ, NALP, City of Austin development codes, Travis County permitting requirements — cite specifics, not generalities.
+16. Include at least TWO "contractor insights" that demonstrate field experience — observations about how materials perform specifically in Central Texas conditions, common mistakes other contractors make, lessons learned from real project scenarios (without naming clients).
+17. Explain the ENGINEERING and SCIENCE behind recommendations. For hardscaping: discuss load-bearing calculations, freeze-thaw cycling, thermal expansion. For irrigation: explain ET rates, soil infiltration rates, precipitation rate matching. For planting: discuss root establishment timelines, mycorrhizal associations, allelopathic effects of native species.
+18. Reference ${siteConfig.ownerName}'s direct expertise at least twice — once in the intro context and once as a specific technical recommendation: "${siteConfig.ownerName}, who has installed over [X] systems across ${siteConfig.serviceArea}..." or "In ${siteConfig.ownerName}'s experience, the most common failure point in [topic] is..."
+19. COMPARE AND CONTRAST: when discussing materials, methods, or approaches, explain the trade-offs. Why choose travertine over flagstone? When does drip irrigation outperform spray heads? What makes cedar superior to pine for Central Texas pergolas? This comparison-based content signals genuine expertise.
+20. Address COMMON MISCONCEPTIONS specific to "${serviceName}" in Central Texas — what do homeowners get wrong, and what does a licensed professional know that contradicts popular DIY advice?
 
 CRITICAL -- IMMEDIATE ACTION SUMMARY BOX:
 Your FIRST content after the intro paragraph MUST be a summary box block formatted EXACTLY like this:
