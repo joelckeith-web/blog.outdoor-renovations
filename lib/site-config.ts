@@ -111,13 +111,13 @@ export const siteConfig = {
 
   // Social / Entity Bridge sameAs
   sameAs: [
-    "https://facebook.com/outdoorrenovations",
+    "https://www.facebook.com/profile.php?id=100086690917763",
     "https://instagram.com/outdoorrenoatx",
     "https://maps.app.goo.gl/iaKdsy6sb7z5yGhw7",
   ],
 
   social: {
-    facebook: "https://facebook.com/outdoorrenovations",
+    facebook: "https://www.facebook.com/profile.php?id=100086690917763",
     instagram: "https://instagram.com/outdoorrenoatx",
     google: "https://maps.app.goo.gl/iaKdsy6sb7z5yGhw7",
   },
