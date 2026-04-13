@@ -36,6 +36,7 @@ export interface BlogFrontmatter {
     type: "Article" | "BlogPosting";
     faqItems: FaqItem[];
   };
+  useBroadcastEvent: boolean; // A/B test: true = BroadcastEvent schema + Indexing API
   status: "draft" | "published";
 }
 

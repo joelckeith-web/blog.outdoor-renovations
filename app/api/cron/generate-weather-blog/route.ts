@@ -4,6 +4,102 @@ import { getNextWeatherCity } from "@/lib/rotation";
 import { buildWeatherContext } from "@/lib/weather";
 import { generateWeatherBlogPost } from "@/lib/content-generator";
 import { pushPostToGitHub } from "@/lib/github";
+import { siteConfig } from "@/lib/site-config";
+
+/**
+ * Submit a URL to Google's Indexing API for fast indexing.
+ * Only works for pages with BroadcastEvent or JobPosting schema.
+ */
+async function submitToIndexingApi(url: string): Promise<boolean> {
+  const clientEmail = process.env.GOOGLE_INDEXING_CLIENT_EMAIL;
+  const privateKey = process.env.GOOGLE_INDEXING_PRIVATE_KEY;
+
+  if (!clientEmail || !privateKey) {
+    console.log("[INDEXING] Google Indexing API credentials not set, skipping");
+    return false;
+  }
+
+  try {
+    // Build JWT for Google Indexing API
+    const header = btoa(JSON.stringify({ alg: "RS256", typ: "JWT" }));
+    const now = Math.floor(Date.now() / 1000);
+    const claim = btoa(
+      JSON.stringify({
+        iss: clientEmail,
+        scope: "https://www.googleapis.com/auth/indexing",
+        aud: "https://oauth2.googleapis.com/token",
+        iat: now,
+        exp: now + 3600,
+      })
+    );
+
+    // Import the private key and sign
+    const key = privateKey.replace(/\\n/g, "\n");
+    const encoder = new TextEncoder();
+    const keyData = key
+      .replace("-----BEGIN PRIVATE KEY-----", "")
+      .replace("-----END PRIVATE KEY-----", "")
+      .replace(/\s/g, "");
+    const binaryKey = Uint8Array.from(atob(keyData), (c) => c.charCodeAt(0));
+
+    const cryptoKey = await crypto.subtle.importKey(
+      "pkcs8",
+      binaryKey,
+      { name: "RSASSA-PKCS1-v1_5", hash: "SHA-256" },
+      false,
+      ["sign"]
+    );
+
+    const signatureInput = encoder.encode(`${header}.${claim}`);
+    const signature = await crypto.subtle.sign(
+      "RSASSA-PKCS1-v1_5",
+      cryptoKey,
+      signatureInput
+    );
+    const signatureB64 = btoa(String.fromCharCode(...new Uint8Array(signature)))
+      .replace(/\+/g, "-")
+      .replace(/\//g, "_")
+      .replace(/=+$/, "");
+
+    const jwt = `${header}.${claim}.${signatureB64}`;
+
+    // Exchange JWT for access token
+    const tokenRes = await fetch("https://oauth2.googleapis.com/token", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=${jwt}`,
+    });
+    const tokenData = await tokenRes.json();
+
+    if (!tokenData.access_token) {
+      console.error("[INDEXING] Failed to get access token:", tokenData);
+      return false;
+    }
+
+    // Submit URL for indexing
+    const indexRes = await fetch(
+      "https://indexing.googleapis.com/v3/urlNotifications:publish",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${tokenData.access_token}`,
+        },
+        body: JSON.stringify({
+          url,
+          type: "URL_UPDATED",
+        }),
+      }
+    );
+
+    const indexData = await indexRes.json();
+    console.log(`[INDEXING] Submitted ${url}:`, JSON.stringify(indexData));
+    return indexRes.ok;
+  } catch (err) {
+    console.error("[INDEXING] Error submitting to Indexing API:", err);
+    return false;
+  }
+}
 
 export async function GET(request: NextRequest) {
   const authHeader = request.headers.get("authorization");
@@ -21,6 +117,10 @@ export async function GET(request: NextRequest) {
     const { city: targetCity, updatedState } = getNextWeatherCity(state);
     console.log(`[CRON] Target city: ${targetCity.name}`);
 
+    // A/B test: even rotation index = BroadcastEvent schema + Indexing API
+    const useBroadcastEvent = state.weatherCityIndex % 2 === 0;
+    console.log(`[CRON] BroadcastEvent A/B: ${useBroadcastEvent ? "WITH" : "WITHOUT"} (index: ${state.weatherCityIndex})`);
+
     // Step 2: Build weather context for the target city
     const weatherContext = await buildWeatherContext();
     console.log(`[CRON] Mode: ${weatherContext.mode}`);
@@ -28,8 +128,8 @@ export async function GET(request: NextRequest) {
     console.log(`[CRON] Affected services: ${weatherContext.affectedServices.join(", ")}`);
     console.log(`[CRON] Week: ${weatherContext.weekLabel}`);
 
-    // Step 3: Generate content with Claude
-    const blog = await generateWeatherBlogPost(weatherContext, targetCity);
+    // Step 3: Generate content with Claude (passes BroadcastEvent flag)
+    const blog = await generateWeatherBlogPost(weatherContext, targetCity, useBroadcastEvent);
     console.log(`[CRON] Generated: "${blog.frontmatter.title}"`);
     console.log(`[CRON] File: ${blog.filePath}`);
 
@@ -41,6 +141,16 @@ export async function GET(request: NextRequest) {
     await saveRotationState(updatedState);
     console.log(`[CRON] Rotation state updated — weatherCityIndex: ${updatedState.weatherCityIndex}`);
 
+    // Step 6: Submit to Google Indexing API if BroadcastEvent is enabled
+    let indexingResult = null;
+    if (useBroadcastEvent) {
+      const postUrl = `${siteConfig.blogUrl}/blog/${blog.frontmatter.slug}`;
+      console.log(`[CRON] Submitting to Google Indexing API: ${postUrl}`);
+      const indexed = await submitToIndexingApi(postUrl);
+      indexingResult = indexed ? "submitted" : "failed";
+      console.log(`[CRON] Indexing API result: ${indexingResult}`);
+    }
+
     return NextResponse.json({
       success: true,
       post: {
@@ -48,6 +158,7 @@ export async function GET(request: NextRequest) {
         slug: blog.frontmatter.slug,
         targetCity: targetCity.name,
         weatherMode: blog.frontmatter.weatherMode,
+        useBroadcastEvent,
       },
       weather: {
         mode: weatherContext.mode,
@@ -55,6 +166,7 @@ export async function GET(request: NextRequest) {
         forecast: weatherContext.forecastSummary,
       },
       githubUrl,
+      indexingResult,
     });
   } catch (error) {
     console.error("[CRON] Weather blog generation error:", error);

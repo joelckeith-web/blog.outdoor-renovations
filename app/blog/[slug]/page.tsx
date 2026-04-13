@@ -11,6 +11,7 @@ import {
   ArticleSchema,
   FaqSchema,
   BreadcrumbSchema,
+  BroadcastEventSchema,
 } from "@/components/SchemaMarkup";
 import { siteConfig, services, getServicePageUrl } from "@/lib/site-config";
 import Link from "next/link";
@@ -61,6 +62,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       {/* Schema markup */}
       <ArticleSchema post={post} />
       <FaqSchema items={post.frontmatter.schema?.faqItems || []} />
+      {post.frontmatter.useBroadcastEvent && <BroadcastEventSchema post={post} />}
       <BreadcrumbSchema
         items={[
           { name: "Home", url: siteConfig.mainSiteUrl },

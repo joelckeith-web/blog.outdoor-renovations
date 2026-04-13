@@ -39,7 +39,8 @@ function getAnthropicClient() {
  */
 export async function generateWeatherBlogPost(
   context: WeatherContext,
-  targetCity: CityConfig
+  targetCity: CityConfig,
+  useBroadcastEvent: boolean = false
 ): Promise<GeneratedBlog> {
   const internalLinks = buildInternalLinksContext(targetCity);
   const geoFooterLinks = buildGeoFooterLinks(
@@ -71,6 +72,7 @@ export async function generateWeatherBlogPost(
     weatherWeek: context.weekLabel,
     geoFooterLinks,
     primaryService: context.affectedServices[0],
+    useBroadcastEvent,
   });
 }
 
@@ -561,6 +563,7 @@ interface ParseOptions {
   weatherWeek: string;
   geoFooterLinks: ServiceAreaLink[];
   primaryService: string;
+  useBroadcastEvent?: boolean;
 }
 
 /**
@@ -605,6 +608,9 @@ export function parseGeneratedContent(
   const now = new Date();
   const dateStr = now.toISOString().split("T")[0];
 
+  // A/B test: use BroadcastEvent schema on weather posts when flag is set
+  const useBroadcastEvent = options.useBroadcastEvent ?? false;
+
   const frontmatter: BlogFrontmatter = {
     title,
     slug,
@@ -633,6 +639,7 @@ export function parseGeneratedContent(
       type: "Article",
       faqItems,
     },
+    useBroadcastEvent,
     status: "published",
   };
 
@@ -680,6 +687,7 @@ featuredImage: "${fm.featuredImage}"
 featuredImageAlt: "${escapeYaml(fm.featuredImageAlt)}"
 targetCity: "${fm.targetCity}"
 postType: "${fm.postType}"
+useBroadcastEvent: ${fm.useBroadcastEvent}
 serviceAreaFooterLinks:
 ${geoLinksYaml}
 schema:

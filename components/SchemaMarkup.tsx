@@ -148,6 +148,66 @@ export function LocalBusinessSchema() {
   );
 }
 
+/**
+ * BroadcastEvent schema for weather-triggered blog posts.
+ * Frames the weather blog as a broadcast of a weather advisory/update,
+ * which qualifies for Google's Indexing API fast-track.
+ *
+ * A/B test: only rendered on posts where useBroadcastEvent is true.
+ */
+export function BroadcastEventSchema({ post }: { post: BlogPost }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BroadcastEvent",
+    name: post.frontmatter.title,
+    description: post.frontmatter.metaDescription,
+    isLiveBroadcast: false,
+    startDate: `${post.frontmatter.publishDate}T06:00:00-05:00`,
+    endDate: `${post.frontmatter.publishDate}T23:59:59-05:00`,
+    videoFormat: "SD", // required field
+    broadcastOfEvent: {
+      "@type": "Event",
+      name: `Weather Advisory: ${post.frontmatter.targetCity}, TX — ${post.frontmatter.weatherWeek}`,
+      description: post.frontmatter.metaDescription,
+      startDate: `${post.frontmatter.publishDate}T06:00:00-05:00`,
+      endDate: `${post.frontmatter.publishDate}T23:59:59-05:00`,
+      location: {
+        "@type": "Place",
+        name: `${post.frontmatter.targetCity}, Texas`,
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: post.frontmatter.targetCity,
+          addressRegion: "TX",
+          addressCountry: "US",
+        },
+      },
+      organizer: {
+        "@type": "Organization",
+        name: siteConfig.companyName,
+        url: siteConfig.mainSiteUrl,
+      },
+    },
+    publishedOn: {
+      "@type": "BroadcastService",
+      name: `${siteConfig.shortName} Weather Blog`,
+      url: siteConfig.blogUrl,
+      broadcastDisplayName: `${siteConfig.companyName} — Austin Weather Updates`,
+      broadcaster: {
+        "@type": "Organization",
+        name: siteConfig.companyName,
+        url: siteConfig.mainSiteUrl,
+      },
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 /** BreadcrumbList schema */
 export function BreadcrumbSchema({
   items,
