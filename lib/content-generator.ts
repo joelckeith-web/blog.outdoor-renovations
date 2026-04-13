@@ -40,7 +40,9 @@ function getAnthropicClient() {
 export async function generateWeatherBlogPost(
   context: WeatherContext,
   targetCity: CityConfig,
-  useBroadcastEvent: boolean = false
+  useBroadcastEvent: boolean = false,
+  photoUrl?: string,
+  photoAlt?: string
 ): Promise<GeneratedBlog> {
   const internalLinks = buildInternalLinksContext(targetCity);
   const geoFooterLinks = buildGeoFooterLinks(
@@ -73,6 +75,8 @@ export async function generateWeatherBlogPost(
     geoFooterLinks,
     primaryService: context.affectedServices[0],
     useBroadcastEvent,
+    photoUrl,
+    photoAlt,
   });
 }
 
@@ -84,7 +88,9 @@ export async function generateWeatherBlogPost(
  * Generate a deep-dive service blog post with seasonal tie-in.
  */
 export async function generateServiceBlogPost(
-  serviceContext: ServiceBlogContext
+  serviceContext: ServiceBlogContext,
+  photoUrl?: string,
+  photoAlt?: string
 ): Promise<GeneratedBlog> {
   const { service, targetCity, season, weatherContext } = serviceContext;
 
@@ -120,6 +126,8 @@ export async function generateServiceBlogPost(
     weatherWeek: weatherContext.weekLabel,
     geoFooterLinks,
     primaryService: service.slug,
+    photoUrl,
+    photoAlt,
   });
 }
 
@@ -564,6 +572,8 @@ interface ParseOptions {
   geoFooterLinks: ServiceAreaLink[];
   primaryService: string;
   useBroadcastEvent?: boolean;
+  photoUrl?: string; // Vercel Blob URL from photo registry
+  photoAlt?: string; // Alt text from photo registry
 }
 
 /**
@@ -624,11 +634,11 @@ export function parseGeneratedContent(
     weatherTriggered: options.weatherTriggered,
     weatherMode: options.weatherMode,
     weatherWeek: options.weatherWeek,
-    featuredImage: getBlogFeaturedImage(
+    featuredImage: options.photoUrl || getBlogFeaturedImage(
       category || (options.primaryService as string) || "general",
       slug
     ).src,
-    featuredImageAlt: getBlogFeaturedImage(
+    featuredImageAlt: options.photoAlt || getBlogFeaturedImage(
       category || (options.primaryService as string) || "general",
       slug
     ).alt,

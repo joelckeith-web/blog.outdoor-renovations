@@ -4,6 +4,7 @@ import { getNextServiceAndCity } from "@/lib/rotation";
 import { buildWeatherContext } from "@/lib/weather";
 import { generateServiceBlogPost } from "@/lib/content-generator";
 import { pushPostToGitHub } from "@/lib/github";
+import { getPhotoRegistry, selectPhotoForPost, markPhotoUsed, savePhotoRegistry } from "@/lib/photo-registry";
 import type { ServiceBlogContext } from "@/lib/types";
 
 /**
@@ -51,8 +52,35 @@ export async function GET(request: NextRequest) {
       weatherContext,
     };
 
+    // Step 4.5: Select a featured photo from the registry
+    let photoUrl: string | undefined;
+    let photoAlt: string | undefined;
+    try {
+      const photoRegistry = await getPhotoRegistry();
+      const selectedPhoto = selectPhotoForPost(
+        photoRegistry,
+        service.slug,
+        state.recentlyUsedPhotoIds || []
+      );
+      if (selectedPhoto) {
+        photoUrl = selectedPhoto.blobUrl;
+        photoAlt = selectedPhoto.alt;
+        const updatedRegistry = markPhotoUsed(photoRegistry, selectedPhoto.id);
+        await savePhotoRegistry(updatedRegistry);
+        updatedState.recentlyUsedPhotoIds = [
+          selectedPhoto.id,
+          ...(state.recentlyUsedPhotoIds || []).slice(0, 21),
+        ];
+        console.log(`[CRON] Selected photo: ${selectedPhoto.filename} (${selectedPhoto.category})`);
+      } else {
+        console.log("[CRON] No photos in registry, using fallback images");
+      }
+    } catch (err) {
+      console.warn("[CRON] Photo selection failed, using fallback:", err);
+    }
+
     // Step 5: Generate content with Claude
-    const blog = await generateServiceBlogPost(serviceContext);
+    const blog = await generateServiceBlogPost(serviceContext, photoUrl, photoAlt);
     console.log(`[CRON] Generated: "${blog.frontmatter.title}"`);
     console.log(`[CRON] File: ${blog.filePath}`);
 

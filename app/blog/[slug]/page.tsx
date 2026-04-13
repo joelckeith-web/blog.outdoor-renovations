@@ -120,7 +120,9 @@ export default async function BlogPostPage({ params }: PageProps) {
             <div className="relative aspect-[21/9] rounded-lg overflow-hidden shadow-lg">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={`https://www.outdoorreno.com${post.frontmatter.featuredImage}`}
+                src={post.frontmatter.featuredImage.startsWith('http')
+                  ? post.frontmatter.featuredImage
+                  : `https://www.outdoorreno.com${post.frontmatter.featuredImage}`}
                 alt={post.frontmatter.featuredImageAlt || `${post.frontmatter.title} — Outdoor Renovations`}
                 className="w-full h-full object-cover"
               />

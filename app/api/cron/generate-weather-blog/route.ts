@@ -5,6 +5,7 @@ import { buildWeatherContext } from "@/lib/weather";
 import { generateWeatherBlogPost } from "@/lib/content-generator";
 import { pushPostToGitHub } from "@/lib/github";
 import { siteConfig } from "@/lib/site-config";
+import { getPhotoRegistry, selectPhotoForPost, markPhotoUsed, savePhotoRegistry } from "@/lib/photo-registry";
 
 /**
  * Submit a URL to Google's Indexing API for fast indexing.
@@ -128,8 +129,35 @@ export async function GET(request: NextRequest) {
     console.log(`[CRON] Affected services: ${weatherContext.affectedServices.join(", ")}`);
     console.log(`[CRON] Week: ${weatherContext.weekLabel}`);
 
-    // Step 3: Generate content with Claude (passes BroadcastEvent flag)
-    const blog = await generateWeatherBlogPost(weatherContext, targetCity, useBroadcastEvent);
+    // Step 2.5: Select a featured photo from the registry
+    let photoUrl: string | undefined;
+    let photoAlt: string | undefined;
+    try {
+      const photoRegistry = await getPhotoRegistry();
+      const selectedPhoto = selectPhotoForPost(
+        photoRegistry,
+        weatherContext.affectedServices[0] || "general",
+        state.recentlyUsedPhotoIds || []
+      );
+      if (selectedPhoto) {
+        photoUrl = selectedPhoto.blobUrl;
+        photoAlt = selectedPhoto.alt;
+        const updatedRegistry = markPhotoUsed(photoRegistry, selectedPhoto.id);
+        await savePhotoRegistry(updatedRegistry);
+        updatedState.recentlyUsedPhotoIds = [
+          selectedPhoto.id,
+          ...(state.recentlyUsedPhotoIds || []).slice(0, 21),
+        ];
+        console.log(`[CRON] Selected photo: ${selectedPhoto.filename} (${selectedPhoto.category})`);
+      } else {
+        console.log("[CRON] No photos in registry, using fallback images");
+      }
+    } catch (err) {
+      console.warn("[CRON] Photo selection failed, using fallback:", err);
+    }
+
+    // Step 3: Generate content with Claude (passes BroadcastEvent flag + photo)
+    const blog = await generateWeatherBlogPost(weatherContext, targetCity, useBroadcastEvent, photoUrl, photoAlt);
     console.log(`[CRON] Generated: "${blog.frontmatter.title}"`);
     console.log(`[CRON] File: ${blog.filePath}`);
 

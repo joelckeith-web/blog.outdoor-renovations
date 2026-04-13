@@ -151,12 +151,35 @@ export interface GeneratedBlog {
   filePath: string;
 }
 
+// ─── Photo registry ──────────────────────────────────────────
+export interface PhotoAsset {
+  id: string; // Google Drive file ID
+  filename: string; // Original filename
+  blobUrl: string; // Vercel Blob CDN URL
+  category: BlogFrontmatter["category"];
+  alt: string; // Descriptive alt text
+  width: number;
+  height: number;
+  sizeBytes: number;
+  driveModifiedTime: string; // ISO 8601
+  syncedAt: string; // ISO 8601
+  usageCount: number;
+  lastUsedAt: string | null;
+}
+
+export interface PhotoRegistry {
+  photos: PhotoAsset[];
+  lastSyncedAt: string;
+  driveFolderId: string;
+}
+
 // ─── Rotation state (city/service round-robin) ─────────────
 export interface RotationState {
   weatherCityIndex: number;
   serviceCityIndex: number;
   serviceIndex: number;
   lastUpdated: string; // ISO 8601
+  recentlyUsedPhotoIds?: string[]; // dedup tracking for photo selection
 }
 
 // ─── Service blog context (for non-weather posts) ──────────

@@ -26,7 +26,9 @@ export default function PostCard({ post }: { post: BlogPost }) {
         {frontmatter.featuredImage ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={`https://www.outdoorreno.com${frontmatter.featuredImage}`}
+            src={frontmatter.featuredImage.startsWith('http')
+              ? frontmatter.featuredImage
+              : `https://www.outdoorreno.com${frontmatter.featuredImage}`}
             alt={frontmatter.featuredImageAlt || frontmatter.title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           />
