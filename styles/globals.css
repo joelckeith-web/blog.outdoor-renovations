@@ -28,9 +28,11 @@
    * ══════════════════════════════════════════════════════════════
    */
 
-  /* Key Takeaway callout blocks — dark bg, white text */
+  /* Key Takeaway callout blocks — dark bg, white text.
+     flow-root creates a BFC so the background respects the floated sidebar
+     instead of bleeding under it on long posts with the float layout. */
   .key-takeaway {
-    @apply my-8 rounded-lg border-l-4 border-white/20 bg-brand-dark p-6 text-white;
+    @apply my-8 flow-root rounded-lg border-l-4 border-white/20 bg-brand-dark p-6 text-white;
   }
 
   .key-takeaway strong:first-child {
@@ -58,9 +60,10 @@
     @apply border-l-4 border-brand-accent bg-gray-50 py-1 px-4 italic;
   }
 
-  /* AI Summary Box — dark bg, white text for contrast */
+  /* AI Summary Box — dark bg, white text for contrast.
+     flow-root creates a BFC so the background respects the floated sidebar. */
   .prose blockquote:first-of-type {
-    @apply not-italic rounded-lg border-l-4 border-white/20 bg-brand-dark text-white p-6 my-8;
+    @apply not-italic flow-root rounded-lg border-l-4 border-white/20 bg-brand-dark text-white p-6 my-8;
   }
 
   .prose blockquote:first-of-type strong:first-child {

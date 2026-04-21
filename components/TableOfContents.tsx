@@ -57,7 +57,10 @@ export default function TableOfContents({ content }: Props) {
   return (
     <nav
       aria-label="Table of contents"
-      className="my-8 rounded-lg border border-brand-accent/20 bg-brand-light p-6"
+      /* flow-root establishes a new block formatting context so the TOC's
+         background respects the floated sidebar on the right instead of
+         bleeding underneath it */
+      className="my-8 flow-root rounded-lg border border-brand-accent/20 bg-brand-light p-6"
     >
       <h2 className="mb-3 text-lg font-bold text-brand-dark">In This Article</h2>
       <ol className="space-y-2 list-decimal list-inside marker:text-brand-accent marker:font-semibold">
