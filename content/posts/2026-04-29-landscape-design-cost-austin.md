@@ -117,7 +117,7 @@ Separate contractors each add their own markup on materials and coordination ove
 
 Design-build consolidates that to a single contract and a single project manager. The same company that designed the retaining wall builds it. The drainage crew coordinates with the hardscape crew on the same calendar. Material orders go through one supplier relationship instead of five.
 
-The result is less variance between the initial estimate and the final invoice. Learn more in [our complete guide to the design-build process](https://blog.outdoorreno.com/landscape-design-build-austin-complete-guide).
+The result is less variance between the initial estimate and the final invoice. Learn more in [our complete guide to the design-build process](https://blog.outdoorreno.com/blog/landscape-design-build-austin-complete-guide).
 
 ## Start Your Project
 

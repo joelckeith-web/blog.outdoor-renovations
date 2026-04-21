@@ -149,7 +149,7 @@ Maintenance that protects the work. A landscape that falls apart in two years is
 
 Accountability under a landscape contractor license. Kyle Stoutenger is personally licensed. Every project bears that credential. If something goes wrong, there is a licensed contractor on the other end — not a sales rep pointing to a subcontractor.
 
-For budget guidance on specific project types, see our companion guide, [Landscape Design Cost in Austin](https://blog.outdoorreno.com/landscape-design-cost-austin).
+For budget guidance on specific project types, see our companion guide, [Landscape Design Cost in Austin](https://blog.outdoorreno.com/blog/landscape-design-cost-austin).
 
 **Key Takeaway:** Outdoor Renovations runs design, build, and long-term care under one roof. That model produces craftsmanship, honest timing, and accountability that bid-and-move-on contractors and maintenance-only companies cannot match.
 
