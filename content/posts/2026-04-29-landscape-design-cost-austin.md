@@ -131,4 +131,4 @@ The result is less variance between the initial estimate and the final invoice. 
 
 Every project is different, and every accurate estimate starts with a conversation and a site visit. Book an on-site consultation and we will walk your property, discuss goals and budget, and outline what your specific project looks like.
 
-Book your on-site consultation at [outdoorreno.com/contact](https://outdoorreno.com/contact). Call (512) 743-0570. Visit 1802 Benchmark Dr, Austin, TX 78728.
+Book your on-site consultation at [outdoorreno.com/contact](https://outdoorreno.com/contact). Call (512) 743-0570.

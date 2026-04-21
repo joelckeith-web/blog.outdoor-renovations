@@ -169,4 +169,4 @@ If you are planning a full-property renovation, a focused outdoor living project
 
 To start, book an on-site design consultation. Kyle or a senior designer will walk your property, talk goals and budget, and outline what design-build looks like for your specific project.
 
-Book your on-site consultation at [outdoorreno.com/contact](https://outdoorreno.com/contact). Call (512) 743-0570. Visit 1802 Benchmark Dr, Austin, TX 78728.
+Book your on-site consultation at [outdoorreno.com/contact](https://outdoorreno.com/contact). Call (512) 743-0570.
