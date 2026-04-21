@@ -21,7 +21,7 @@ export const siteConfig = {
   tagline: "Design | Landscape | Maintain",
   motto: "Renovating Outdoor Dreams to Reality",
   description:
-    "Licensed landscape contractor serving Austin Metro & Central Texas since 2010. 200+ completed projects with a 5-star rating. Custom landscape design, hardscaping, carpentry, irrigation, lighting, and property management for residential and commercial clients.",
+    "Licensed landscape contractor serving Austin Metro & Central Texas since 2022. 200+ completed projects with a 5-star rating. Custom landscape design, hardscaping, carpentry, irrigation, lighting, and property management for residential and commercial clients.",
   reviews: "5-Star Rated",
   averageRating: "5.0",
 
@@ -44,7 +44,11 @@ export const siteConfig = {
       "Year-round installation possible; avoid pouring concrete above 95\u00B0F",
   },
 
-  foundedYear: 2010,
+  foundedYear: 2022,
+  // Kyle Stoutenger's personal years in the landscape industry.
+  // Predates Outdoor Renovations' 2022 founding — use only in contexts
+  // that clearly attribute this experience to Kyle, never as company age.
+  ownerYearsExperience: "16+",
   ownerName: "Kyle Stoutenger",
   ownerTitle: "Owner & Licensed Landscape Contractor",
   projectsCompleted: "200+",

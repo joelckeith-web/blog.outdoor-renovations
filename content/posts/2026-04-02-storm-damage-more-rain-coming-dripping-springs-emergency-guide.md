@@ -194,7 +194,7 @@ Kyle Stoutenger recommends using storm events as learning opportunities. Every s
 
 **Key Takeaway:** Storm recovery is about more than cleaning up debris — it's about understanding what needs to change for long-term property protection.
 
-Don't wait until water is flowing into your house to address drainage problems. Outdoor Renovations has been helping Austin Metro and Central Texas homeowners protect their properties from severe weather since 2010. Our team understands Hill Country terrain, Central Texas soils, and the drainage solutions that work in our challenging climate conditions.
+Don't wait until water is flowing into your house to address drainage problems. Outdoor Renovations has been helping Austin Metro and Central Texas homeowners protect their properties from severe weather since 2022. Our team understands Hill Country terrain, Central Texas soils, and the drainage solutions that work in our challenging climate conditions.
 
 We're fully bonded and insured with a 1-year service guarantee on all work. From emergency storm damage repair to comprehensive drainage system design, we help homeowners turn outdoor renovation dreams into reality — even when those dreams include surviving Central Texas storms.
 

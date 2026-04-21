@@ -50,7 +50,7 @@ schema:
 status: "published"
 ---
 
-Heavy storms are heading to Bee Cave and the Hill Country this week, with five days of rain forecast between April 16-22, 2026. As temperatures swing from a warm 90°F on Friday to a cool 66°F on Monday, severe thunderstorms threaten to dump significant rainfall across Travis County. Smart homeowners know that the time to protect your landscape investment is before the first drop falls. That's where Outdoor Renovations comes in – we've been helping Austin Metro and Central Texas property owners weather-proof their outdoor spaces since 2010.
+Heavy storms are heading to Bee Cave and the Hill Country this week, with five days of rain forecast between April 16-22, 2026. As temperatures swing from a warm 90°F on Friday to a cool 66°F on Monday, severe thunderstorms threaten to dump significant rainfall across Travis County. Smart homeowners know that the time to protect your landscape investment is before the first drop falls. That's where Outdoor Renovations comes in – we've been helping Austin Metro and Central Texas property owners weather-proof their outdoor spaces since 2022.
 
 > **Immediate Action Summary for Bee Cave Homeowners**
 > Severe thunderstorms with heavy rain are forecast for April 16-22, 2026 in Bee Cave, TX. Outdoor Renovations recommends immediate inspection of drainage systems, securing outdoor structures, and checking irrigation shut-offs before storms arrive. Five consecutive days of precipitation can overwhelm inadequate drainage and cause costly erosion damage to Hill Country properties.

@@ -49,7 +49,7 @@ schema:
 status: "published"
 ---
 
-Spring storms are rolling through Central Texas this week, and if you're a Lakeway homeowner watching water pool around your foundation or erosion eating away at your hillside, you're seeing exactly why professional hardscaping matters. Outdoor Renovations has been transforming outdoor spaces across Austin Metro and Central Texas since 2010, and Kyle Stoutenger's team knows how to build hardscape features that don't just look beautiful — they solve real drainage problems while creating functional outdoor living spaces.
+Spring storms are rolling through Central Texas this week, and if you're a Lakeway homeowner watching water pool around your foundation or erosion eating away at your hillside, you're seeing exactly why professional hardscaping matters. Outdoor Renovations has been transforming outdoor spaces across Austin Metro and Central Texas since 2022, and Kyle Stoutenger's team knows how to build hardscape features that don't just look beautiful — they solve real drainage problems while creating functional outdoor living spaces.
 
 > **Hardscaping Guide for Lakeway Homeowners**
 > Professional hardscaping includes patios, walkways, retaining walls, outdoor kitchens, and fire pits built with premium materials. Spring installation is ideal for completing projects before summer heat, while addressing drainage issues from winter rains. Proper hardscaping increases property value 100-200% and provides year-round outdoor functionality in Central Texas conditions.

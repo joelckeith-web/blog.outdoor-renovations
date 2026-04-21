@@ -6,7 +6,7 @@ author: "Outdoor Renovations"
 category: "landscape-design"
 tags: ["landscape design", "Westlake Hills", "spring landscaping", "custom landscape plans", "3D rendering", "Travis County", "Austin landscaping", "Hill Country design"]
 metaTitle: "Landscape Design Westlake Hills TX | Spring Planning Guide"
-metaDescription: "Expert landscape design in Westlake Hills, TX. Custom 2D plans, 3D renderings & construction-ready drawings. Licensed contractor since 2010. Call (512) 743-0570"
+metaDescription: "Expert landscape design in Westlake Hills, TX. Custom 2D plans, 3D renderings & construction-ready drawings. Licensed contractor since 2022. Call (512) 743-0570"
 weatherTriggered: false
 weatherMode: "combined"
 weatherWeek: "April 1–April 7, 2026"
@@ -49,7 +49,7 @@ schema:
 status: "published"
 ---
 
-Spring storms are rolling through Westlake Hills this week, and if you're watching water rush down your slopes or pool in low spots, you're seeing exactly why professional landscape design matters. Outdoor Renovations has been creating custom landscape solutions for Travis County homeowners since 2010, transforming challenging Hill Country terrain into functional outdoor spaces that handle Central Texas weather extremes.
+Spring storms are rolling through Westlake Hills this week, and if you're watching water rush down your slopes or pool in low spots, you're seeing exactly why professional landscape design matters. Outdoor Renovations has been creating custom landscape solutions for Travis County homeowners since 2022, transforming challenging Hill Country terrain into functional outdoor spaces that handle Central Texas weather extremes.
 
 > **Landscape Design Guide for Westlake Hills Homeowners**
 > Professional landscape design creates comprehensive 2D plans, 3D renderings, and construction-ready drawings tailored to your property's unique challenges. Spring planning allows time to address drainage issues, select appropriate native plants for fall installation, and schedule hardscape construction during optimal weather windows. Quality design prevents costly mistakes and maximizes your outdoor investment.

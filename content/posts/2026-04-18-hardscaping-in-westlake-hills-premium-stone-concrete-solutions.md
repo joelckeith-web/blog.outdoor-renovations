@@ -50,7 +50,7 @@ schema:
 status: "published"
 ---
 
-Spring storms are rolling through Westlake Hills this week, and if you're watching water pool on your patio or seeing erosion around your outdoor spaces, you're not alone. This is prime time to address hardscaping issues and plan improvements that will handle Central Texas weather year-round. Outdoor Renovations has been building premium hardscapes across Austin Metro and Central Texas since 2010, and we know exactly how to design stone and concrete features that thrive in our unique Hill Country conditions.
+Spring storms are rolling through Westlake Hills this week, and if you're watching water pool on your patio or seeing erosion around your outdoor spaces, you're not alone. This is prime time to address hardscaping issues and plan improvements that will handle Central Texas weather year-round. Outdoor Renovations has been building premium hardscapes across Austin Metro and Central Texas since 2022, and we know exactly how to design stone and concrete features that thrive in our unique Hill Country conditions.
 
 > **Hardscaping Guide for Westlake Hills Homeowners**
 > Professional hardscaping includes patios, walkways, retaining walls, fire features, and outdoor kitchens built with premium materials and proper engineering. Spring installation takes advantage of optimal weather windows between storms, addressing drainage issues before summer heat arrives. Licensed contractors ensure structural integrity and code compliance for long-lasting outdoor investments.
