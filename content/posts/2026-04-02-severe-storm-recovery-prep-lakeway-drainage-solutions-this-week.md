@@ -49,7 +49,7 @@ schema:
 status: "published"
 ---
 
-Lakeway homeowners just weathered wind gusts up to 37 mph over the past 48 hours, and while no severe weather officially hit, those sustained winds were strong enough to shift loose materials and clog drainage systems. Now more extreme weather is on the way this week, with severe thunderstorms and heavy rain risks forecast for the Austin Metro area. Outdoor Renovations has been helping Central Texas properties prepare for and recover from storm damage since 2010, and this week's forecast demands immediate attention to your drainage systems.
+Lakeway homeowners just weathered wind gusts up to 37 mph over the past 48 hours, and while no severe weather officially hit, those sustained winds were strong enough to shift loose materials and clog drainage systems. Now more extreme weather is on the way this week, with severe thunderstorms and heavy rain risks forecast for the Austin Metro area. Outdoor Renovations has been helping Central Texas properties prepare for and recover from storm damage since 2022, and this week's forecast demands immediate attention to your drainage systems.
 
 > **Immediate Action Summary for Lakeway Homeowners**
 > Wind gusts up to 37 mph have already impacted Lakeway properties, and severe thunderstorms with heavy rain are forecast for Thursday and Saturday. Outdoor Renovations recommends immediate drainage inspection and emergency prep before the next storm system arrives. Call (512) 743-0570 for rapid response drainage solutions and storm damage assessment.

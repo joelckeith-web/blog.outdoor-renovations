@@ -49,7 +49,7 @@ schema:
 status: "published"
 ---
 
-Lakeway homeowners face six days of severe thunderstorms starting April 9th through April 15th, with heavy rain posing serious risks to landscapes across Travis County's Hill Country terrain. The National Weather Service forecasts temperatures from 65°F to 85°F with significant precipitation expected throughout the week. Outdoor Renovations, a licensed landscape contractor serving Lakeway and Central Texas since 2010, helps property owners prepare their landscapes before severe weather strikes.
+Lakeway homeowners face six days of severe thunderstorms starting April 9th through April 15th, with heavy rain posing serious risks to landscapes across Travis County's Hill Country terrain. The National Weather Service forecasts temperatures from 65°F to 85°F with significant precipitation expected throughout the week. Outdoor Renovations, a licensed landscape contractor serving Lakeway and Central Texas since 2022, helps property owners prepare their landscapes before severe weather strikes.
 
 > **Immediate Action Summary for Lakeway Homeowners**
 > Severe storms forecasted April 9-15 require immediate landscape preparation in Lakeway. Check drainage systems, secure loose structures, and inspect irrigation before heavy rains arrive. Outdoor Renovations provides emergency drainage solutions and storm preparation services throughout Travis County's Hill Country terrain. Contact (512) 743-0570 for pre-storm landscape protection.

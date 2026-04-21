@@ -49,7 +49,7 @@ schema:
 status: "published"
 ---
 
-The National Weather Service forecast shows severe thunderstorms arriving in Lakeway this weekend, with heavy rain expected Friday through Sunday, April 10-12. With temperatures climbing from the mid-70s to 84°F and storm systems building, Lakeway homeowners need to act now to protect their landscape investments. Outdoor Renovations has been helping Austin Metro properties weather severe storms since 2010, and proper preparation makes the difference between minor cleanup and major damage.
+The National Weather Service forecast shows severe thunderstorms arriving in Lakeway this weekend, with heavy rain expected Friday through Sunday, April 10-12. With temperatures climbing from the mid-70s to 84°F and storm systems building, Lakeway homeowners need to act now to protect their landscape investments. Outdoor Renovations has been helping Austin Metro properties weather severe storms since 2022, and proper preparation makes the difference between minor cleanup and major damage.
 
 > **Immediate Action Summary for Lakeway Homeowners**
 > Severe thunderstorms forecast April 10-12 require immediate landscape protection. Check drainage systems, secure outdoor furniture, trim overhanging branches, and clear gutters before Friday. Outdoor Renovations provides emergency storm prep and drainage solutions for Lakeway properties. Focus on drainage inspection, plant protection, and structure security over the next 48 hours to prevent storm damage.
