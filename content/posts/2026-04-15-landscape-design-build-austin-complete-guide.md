@@ -65,6 +65,8 @@ This guide walks you through the design-build process from start to finish. You 
 > **Design-Build Guide for Austin Homeowners**
 > Design-build consolidates landscape design and construction under one Licensed Landscape Contractor. For Austin's hillside lots, expansive clay soils, and strict HOA communities, this model reduces coordination failures between trades and keeps project budgets predictable. Outdoor Renovations was founded in 2022 by Kyle Stoutenger, a Licensed Landscape Contractor with over 16 years of personal industry experience. The company delivers eight in-house disciplines across ten Austin-area communities.
 
+![Aerial view of a full-property landscape design-build renovation by Outdoor Renovations in Austin Hill Country](https://outdoorreno.com/images/hero-drone-estate.jpg)
+
 ## Why Design-Build Works Better for Complex Austin Projects
 
 Most Austin homeowners default to the piecemeal approach. A landscape designer draws the plans. The homeowner then finds contractors for each step. Somewhere between bidding, scheduling, and installation, coordination breaks down.
@@ -81,7 +83,9 @@ Three Austin conditions reward this model:
 - Steep limestone grades that require structural retaining walls
 - Strict HOA communities (The Hills of [Lakeway](https://outdoorreno.com/locations/lakeway), Steiner Ranch, Barton Creek) that demand full design packages before any work starts
 
-**Key Takeaway:** Design-build puts six to ten trades under one accountable contractor. This matters more on Austin's hillside and clay-soil properties than on flat suburban builds. Coordination failures between separate vendors are where most high-end landscape budgets leak.
+<div class="key-takeaway"><strong>Key Takeaway:</strong> Design-build puts six to ten trades under one accountable contractor. This matters more on Austin's hillside and clay-soil properties than on flat suburban builds. Coordination failures between separate vendors are where most high-end landscape budgets leak.</div>
+
+![Premium residential landscape by Outdoor Renovations showing integrated hardscape, softscape, and lighting design](https://outdoorreno.com/images/project-landscape.jpg)
 
 ## The Design Phase: Discovery, Site Analysis, and Master Plans
 
@@ -96,6 +100,8 @@ Master plans come in two packages at Outdoor Renovations. The 2D master plan cos
 Design fees apply toward construction if you move forward. The upfront cost is not lost.
 
 Start with [our Landscape Design team](https://outdoorreno.com/services/landscape-design) to book discovery.
+
+![3D landscape design rendering showing photorealistic materials and layout before construction begins](https://outdoorreno.com/images/rendering-irle-6.jpg)
 
 ## Permits, Engineering, and Pre-Construction
 
@@ -121,7 +127,9 @@ This differs from the standard subcontractor model. Most general landscape compa
 
 Construction timelines run from ten weeks for focused renovations to eight months for full-property design-build projects on complex Hill Country lots.
 
-**Key Takeaway:** With design-build, every crew works under the same contract and the same project manager. That coordination is what prevents the rework and schedule slippage that wrecks multi-vendor projects.
+<div class="key-takeaway"><strong>Key Takeaway:</strong> With design-build, every crew works under the same contract and the same project manager. That coordination is what prevents the rework and schedule slippage that wrecks multi-vendor projects.</div>
+
+![Outdoor Renovations crew on-site installing custom carpentry and hardscape in Austin](https://outdoorreno.com/images/install-carpentry-hero.jpg)
 
 ## Closeout, Walkthrough, and the First Year
 
@@ -134,6 +142,8 @@ Next comes the owner's manual. For a project with smart irrigation controllers, 
 The first year includes care provisions. Plant replacement warranty runs one year from installation for trees and shrubs planted in their recommended window. Irrigation system fine-tuning happens once in each of the first two or three months as settings adjust to real plant establishment. Softscape areas get early-life care visits to address anything that did not take.
 
 Clients who want long-term property care can continue with the same team. We offer three property management plans: $400 per month for weekly mow and basic landscape care, $700 per month for expanded maintenance, and $1,200 per month for concierge-level property management. Our [Property and Pest Management team](https://outdoorreno.com/services/property-management) handles these accounts.
+
+![Complete outdoor living space with integrated hardscape, lighting, and planting by Outdoor Renovations](https://outdoorreno.com/images/project-outdoor-living.jpg)
 
 ## What Outdoor Renovations Delivers Beyond the Build
 
@@ -151,7 +161,7 @@ Accountability under a landscape contractor license. Kyle Stoutenger is personal
 
 For budget guidance on specific project types, see our companion guide, [Landscape Design Cost in Austin](https://blog.outdoorreno.com/blog/landscape-design-cost-austin).
 
-**Key Takeaway:** Outdoor Renovations runs design, build, and long-term care under one roof. That model produces craftsmanship, honest timing, and accountability that bid-and-move-on contractors and maintenance-only companies cannot match.
+<div class="key-takeaway"><strong>Key Takeaway:</strong> Outdoor Renovations runs design, build, and long-term care under one roof. That model produces craftsmanship, honest timing, and accountability that bid-and-move-on contractors and maintenance-only companies cannot match.</div>
 
 ## Start Your Design
 

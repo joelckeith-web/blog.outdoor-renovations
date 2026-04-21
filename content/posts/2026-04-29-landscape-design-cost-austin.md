@@ -61,6 +61,8 @@ What we can tell you are the fixed design fees, the variables that drive the bui
 > **Landscape Cost Guide for Austin Homeowners**
 > Landscape design costs in Austin are straightforward at the design phase: $850 for a 2D master plan or $1,250 for a 2D-plus-3D package, credited toward construction. Build costs vary widely based on site conditions, scope, material specifications, permits, and long-lead materials — two similar-looking projects can price two to three times apart. Accurate estimates require a structured five-step process, not a phone quote.
 
+![3D landscape design rendering showing the built environment with materials and layout before construction](https://outdoorreno.com/images/rendering-erwin-3.jpg)
+
 ## The Design Phase: What You Pay For
 
 Every Outdoor Renovations project starts with the design phase. This is where the scope gets defined and the overall budget takes shape.
@@ -71,7 +73,9 @@ Design fees are credited toward construction when you move forward. The upfront 
 
 Skipping design and going straight to construction almost always costs more. Without a master plan, trades do not coordinate, materials get mis-ordered, and rework piles up. A documented design is the cheapest insurance you can buy against that.
 
-**Key Takeaway:** Design fees at Outdoor Renovations are $850 (2D master plan) or $1,250 (2D plus 3D renderings). These apply toward construction when you proceed. Skipping design almost always costs more than including it.
+<div class="key-takeaway"><strong>Key Takeaway:</strong> Design fees at Outdoor Renovations are $850 (2D master plan) or $1,250 (2D plus 3D renderings). These apply toward construction when you proceed. Skipping design almost always costs more than including it.</div>
+
+![Kyle Stoutenger reviewing landscape design plans on-site with a client](https://outdoorreno.com/images/install-plans-review.jpg)
 
 ## What Drives Construction Cost in Austin
 
@@ -89,7 +93,9 @@ Long-lead materials. Specimen trees from wholesale growers, imported travertine 
 
 Two homes that look similar from the street can price very differently based on these five factors.
 
-**Key Takeaway:** Five factors drive landscape construction cost in Austin: site conditions, scope integration, material specifications, permits and HOA requirements, and long-lead materials. Two similar-looking projects can price two to three times apart based on these variables.
+<div class="key-takeaway"><strong>Key Takeaway:</strong> Five factors drive landscape construction cost in Austin: site conditions, scope integration, material specifications, permits and HOA requirements, and long-lead materials. Two similar-looking projects can price two to three times apart based on these variables.</div>
+
+![Premium natural stone hardscape material showing variation that drives project cost differences](https://outdoorreno.com/images/project-stonework.jpg)
 
 ## How to Get an Accurate Estimate
 
@@ -107,7 +113,9 @@ Step 5: Itemized proposal. A line-item quote that breaks down design, hardscape,
 
 Watch for red flags in quotes that skip this process. A verbal estimate without a site visit is a guess. A lump-sum quote with no line items hides markups. A price that is dramatically below other quotes usually means the contractor will either sub the work out to the lowest bidder or skip steps that matter. Before you sign, verify the contractor's license through the [Texas Department of Licensing and Regulation](https://www.tdlr.texas.gov/).
 
-**Key Takeaway:** Accurate estimates come from a five-step process: discovery call, on-site consultation, site analysis, scope definition, itemized proposal. Verbal estimates and lump-sum quotes are red flags.
+<div class="key-takeaway"><strong>Key Takeaway:</strong> Accurate estimates come from a five-step process: discovery call, on-site consultation, site analysis, scope definition, itemized proposal. Verbal estimates and lump-sum quotes are red flags.</div>
+
+![Completed landscape hardscape project demonstrating the outcome of a properly scoped design-build engagement](https://outdoorreno.com/images/project-hardscape.jpg)
 
 ## Why Design-Build Reduces Cost Unpredictability
 
