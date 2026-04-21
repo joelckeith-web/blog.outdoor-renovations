@@ -175,4 +175,4 @@ Our [Softscaping and Planting team](https://outdoorreno.com/services/softscaping
 
 Every property needs a custom plant palette based on site conditions, design style, and maintenance expectations. Outdoor Renovations designs and installs native plant palettes across ten Austin-area communities, with a Licensed Landscape Contractor owning the full scope.
 
-Book an on-site consultation at [outdoorreno.com/contact](https://outdoorreno.com/contact). Call (512) 743-0570. Visit 1802 Benchmark Dr, Austin, TX 78728.
+Book an on-site consultation at [outdoorreno.com/contact](https://outdoorreno.com/contact). Call (512) 743-0570.

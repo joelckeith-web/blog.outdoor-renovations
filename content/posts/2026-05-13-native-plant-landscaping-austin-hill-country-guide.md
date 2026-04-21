@@ -163,4 +163,4 @@ Our [Property and Pest Management team](https://outdoorreno.com/services/propert
 
 Native landscaping rewards design expertise more than most landscape types. Species selection, hydrozoning, soil matching, and microclimate adaptation all affect whether a design works or fails. Outdoor Renovations designs and installs native landscapes across ten Austin-area communities, with a Licensed Landscape Contractor owning the full scope from design through long-term care.
 
-Book an on-site design consultation at [outdoorreno.com/contact](https://outdoorreno.com/contact). Call (512) 743-0570. Visit 1802 Benchmark Dr, Austin, TX 78728.
+Book an on-site design consultation at [outdoorreno.com/contact](https://outdoorreno.com/contact). Call (512) 743-0570.
