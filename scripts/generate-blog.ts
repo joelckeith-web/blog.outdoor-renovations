@@ -3,6 +3,7 @@ dotenv.config({ path: ".env.local" });
 
 import fs from "fs";
 import path from "path";
+import { runPreflight } from "../lib/preflight";
 import { buildWeatherContext } from "../lib/weather";
 import {
   generateWeatherBlogPost,
@@ -49,6 +50,11 @@ async function main() {
   if (cityOverride) console.log(`City override: ${cityOverride}`);
   if (serviceOverride) console.log(`Service override: ${serviceOverride}`);
   console.log(`Push to GitHub: ${shouldPush}\n`);
+
+  // Validate every external dependency BEFORE the expensive Claude call.
+  // If a key is dead or rate-limited, fail fast with a remediation message
+  // instead of burning a full generation cycle to discover it deep in the SDK.
+  await runPreflight();
 
   // Fetch weather context (used by both types)
   console.log("Fetching weather data for Austin, TX...");
