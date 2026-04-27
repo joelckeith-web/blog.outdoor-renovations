@@ -13,10 +13,11 @@ import {
   getRotationState,
   getNextWeatherCity,
   getNextServiceAndCity,
+  saveRotationState,
 } from "../lib/rotation";
 import { siteConfig, services, serviceAreaCities } from "../lib/site-config";
 import type { ServiceConfig, CityConfig } from "../lib/site-config";
-import type { ServiceBlogContext } from "../lib/types";
+import type { ServiceBlogContext, RotationState } from "../lib/types";
 
 // --- CLI argument parsing ---
 const args = process.argv.slice(2);
@@ -60,6 +61,9 @@ async function main() {
   console.log(`Forecast: ${weatherContext.forecastSummary}\n`);
 
   let blog;
+  // Holds the advanced rotation state to persist after a successful push.
+  // Stays undefined when both city and service are user-overridden (manual runs).
+  let pendingStateUpdate: RotationState | undefined;
 
   if (postType === "weather") {
     // --- Weather blog ---
@@ -72,7 +76,9 @@ async function main() {
       if (!match) { console.error(`City "${cityOverride}" not found.`); process.exit(1); }
       targetCity = match;
     } else {
-      targetCity = getNextWeatherCity(state).city;
+      const next = getNextWeatherCity(state);
+      targetCity = next.city;
+      pendingStateUpdate = next.updatedState;
     }
     console.log(`Target city: ${targetCity.name}`);
     console.log("Generating weather blog post with Claude...");
@@ -102,14 +108,19 @@ async function main() {
         if (!cMatch) { console.error(`City "${cityOverride}" not found.`); process.exit(1); }
         city = cMatch;
       } else {
-        city = getNextWeatherCity(state).city;
+        const next = getNextWeatherCity(state);
+        city = next.city;
+        pendingStateUpdate = next.updatedState;
       }
     } else {
       const next = getNextServiceAndCity(state);
       service = next.service;
-      city = cityOverride
-        ? serviceAreaCities.find((c) => c.name.toLowerCase() === cityOverride.toLowerCase()) || next.city
-        : next.city;
+      if (cityOverride) {
+        city = serviceAreaCities.find((c) => c.name.toLowerCase() === cityOverride.toLowerCase()) || next.city;
+      } else {
+        city = next.city;
+      }
+      pendingStateUpdate = next.updatedState;
     }
 
     const season = getCurrentSeason();
@@ -152,6 +163,17 @@ async function main() {
     console.log("\nPushing to GitHub...");
     const githubUrl = await pushPostToGitHub(blog);
     console.log(`Pushed: ${githubUrl}`);
+
+    // Advance and persist rotation state ONLY after a successful push, and only
+    // when no override was supplied (manual override runs must not consume the
+    // rotation slot). This was the missing call that caused successive runs to
+    // re-pick the same city — see post-mortem 2026-04-27.
+    if (pendingStateUpdate) {
+      await saveRotationState(pendingStateUpdate);
+      console.log(
+        `Rotation advanced — weatherCityIndex=${pendingStateUpdate.weatherCityIndex}, serviceIndex=${pendingStateUpdate.serviceIndex}, serviceCityIndex=${pendingStateUpdate.serviceCityIndex}`
+      );
+    }
   }
 
   console.log("\nDone!");
