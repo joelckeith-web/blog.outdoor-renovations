@@ -67,16 +67,38 @@ export function getNextWeatherCity(state: RotationState): {
  * Rotates through all services for each city, then moves to next city.
  * Total cycle: 8 services x 10 cities = 80 unique combinations.
  */
+// Blog service rotation is prioritized by SEO opportunity (low keyword
+// difficulty + high commercial intent) rather than site-config display
+// order. Unlisted slugs fall back after the prioritized set so nothing
+// is ever dropped from the rotation.
+const SERVICE_BLOG_PRIORITY = [
+  "hardscaping",
+  "custom-carpentry",
+  "irrigation-drainage",
+  "landscape-lighting",
+  "landscape-design",
+  "softscaping-planting",
+  "metal-fabrication",
+  "property-management",
+];
+
 export function getNextServiceAndCity(state: RotationState): {
   service: ServiceConfig;
   city: CityConfig;
   updatedState: RotationState;
 } {
-  const service = services[state.serviceIndex];
+  const orderedServices: ServiceConfig[] = [
+    ...SERVICE_BLOG_PRIORITY.map((s) =>
+      services.find((x) => x.slug === s)
+    ).filter((x): x is ServiceConfig => Boolean(x)),
+    ...services.filter((x) => !SERVICE_BLOG_PRIORITY.includes(x.slug)),
+  ];
+  const idx = state.serviceIndex % orderedServices.length;
+  const service = orderedServices[idx];
   const city = serviceAreaCities[state.serviceCityIndex];
 
   // Advance: next service. If all services done, advance city.
-  let nextServiceIndex = (state.serviceIndex + 1) % services.length;
+  let nextServiceIndex = (idx + 1) % orderedServices.length;
   let nextCityIndex = state.serviceCityIndex;
 
   if (nextServiceIndex === 0) {
