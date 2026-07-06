@@ -59,8 +59,9 @@ export async function generateWeatherBlogPost(
   );
 
   const response = await getAnthropicClient().messages.create({
-    model: "claude-sonnet-4-20250514",
+    model: "claude-sonnet-5",
     max_tokens: 8000,
+    thinking: { type: "disabled" },
     system: systemPrompt,
     messages: [{ role: "user", content: userPrompt }],
   });
@@ -111,8 +112,9 @@ export async function generateServiceBlogPost(
   );
 
   const response = await getAnthropicClient().messages.create({
-    model: "claude-sonnet-4-20250514",
+    model: "claude-sonnet-5",
     max_tokens: 8000,
+    thinking: { type: "disabled" },
     system: systemPrompt,
     messages: [{ role: "user", content: userPrompt }],
   });
