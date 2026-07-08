@@ -113,13 +113,9 @@ export function LocalBusinessSchema() {
       longitude: -97.7431,
     },
     openingHoursSpecification: siteConfig.openingHoursSpecification,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "200",
-      bestRating: "5",
-      worstRating: "1",
-    },
+    // AggregateRating removed: self-serving LocalBusiness ratings are
+    // ineligible for review snippets, and the count must match real GBP
+    // reviews (main site made the same call in site-config.ts).
     areaServed: serviceAreaCities.map((city) => ({
       "@type": "City",
       name: city.name,
