@@ -174,8 +174,8 @@ export const siteConfig = {
       topic: "Water-efficient irrigation, smart controllers, conservation",
     },
     {
-      name: "Austin Water Conservation",
-      url: "https://www.austintexas.gov/department/water-conservation",
+      name: "Austin Water",
+      url: "https://austintexas.gov/water",
       topic: "Local water restrictions, rebate programs, irrigation rules",
     },
     {

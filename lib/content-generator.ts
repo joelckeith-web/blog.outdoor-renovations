@@ -161,10 +161,10 @@ STRICT CONTENT RULES (Core Content Creation SOP):
 2. Include the primary keyword in the H1 title and within the first 100 words.
 3. Introduce the business entity "${siteConfig.companyName}" in the first paragraph.
 4. Include 4 or more internal links to verified service pages (provided below).
-5. Include 2 or more external Tier 1 links -- ONLY to .gov, .edu, or established industry authorities.
+5. External links: use ONLY the exact URLs in the PRE-APPROVED EXTERNAL SOURCES list below. NEVER invent deeper paths on those domains and NEVER add external links from anywhere else.
 6. Add "Key Takeaway" callout blocks after every 2-3 H2 sections.
 7. Include 6 or more FAQ items at the end, structured for FAQPage schema.
-8. Do NOT fabricate statistics, credentials, certifications, or customer stories.
+8. Do NOT fabricate statistics, credentials, certifications, or customer stories. NEVER attribute a number, percentage, finding, or quote to any named organization, study, or person — if a claim needs a source you don't have in this prompt, make the claim general or drop it.
 9. Reference Austin, Central Texas, and Hill Country service areas by name.
 10. Reference the ACTUAL weather data (historical and/or forecast) with specific dates.
 11. Include a CTA paragraph at the end with phone number ${siteConfig.phone}.
@@ -383,10 +383,10 @@ STRICT CONTENT RULES (Core Content Creation SOP):
 2. Include the primary keyword (service name + city) in the H1 title and within the first 100 words.
 3. Introduce the business entity "${siteConfig.companyName}" in the first paragraph.
 4. Include 4 or more internal links to verified service pages (provided below).
-5. Include 2 or more external Tier 1 links -- ONLY to .gov, .edu, or established industry authorities.
+5. External links: use ONLY the exact URLs in the PRE-APPROVED EXTERNAL SOURCES list below. NEVER invent deeper paths on those domains and NEVER add external links from anywhere else.
 6. Add "Key Takeaway" callout blocks after every 2-3 H2 sections.
 7. Include 6 or more FAQ items at the end, structured for FAQPage schema.
-8. Do NOT fabricate statistics, credentials, certifications, or customer stories.
+8. Do NOT fabricate statistics, credentials, certifications, or customer stories. NEVER attribute a number, percentage, finding, or quote to any named organization, study, or person — if a claim needs a source you don't have in this prompt, make the claim general or drop it.
 9. Reference Austin, Central Texas, and Hill Country service areas by name.
 10. Tie content to the current ${season} season -- what makes this service relevant NOW.
 11. Include a CTA paragraph at the end with phone number ${siteConfig.phone}.
@@ -408,10 +408,10 @@ READING LEVEL & NATURAL LANGUAGE REQUIREMENTS:
 E-E-A-T AUTHORITY REQUIREMENTS (non-negotiable):
 13. Write as a SUBJECT MATTER EXPERT with deep technical knowledge of "${serviceName}". Go beyond surface-level advice — demonstrate the kind of expertise that only comes from extensive hands-on work in Central Texas. When citing experience in years, attribute it ONLY to Kyle Stoutenger personally (${siteConfig.ownerYearsExperience} years of personal industry experience), never to the company itself (which was founded in ${siteConfig.foundedYear}).
 14. Include SPECIFIC technical details relevant to "${serviceName}": material specifications, engineering tolerances, installation methodologies, manufacturer requirements, code compliance details, failure mode analysis — whatever establishes undeniable expertise.
-15. Reference REAL industry standards and regulatory bodies: ISA, ASTM, EPA WaterSense, TCEQ, NALP, City of Austin development codes, Travis County permitting requirements — cite specifics, not generalities.
+15. You may note that industry standards and local requirements EXIST (e.g., City of Austin development codes, Travis County permitting, irrigation standards) in GENERAL terms only. NEVER state what a specific standard requires, never quote a threshold or number from one, and never attribute any statistic or finding to a named organization. Fabricated citations are the one unforgivable error in this system.
 16. Include at least TWO "contractor insights" that demonstrate field experience — observations about how materials perform specifically in Central Texas conditions, common mistakes other contractors make, lessons learned from real project scenarios (without naming clients).
-17. Explain the ENGINEERING and SCIENCE behind recommendations. For hardscaping: discuss load-bearing calculations, freeze-thaw cycling, thermal expansion. For irrigation: explain ET rates, soil infiltration rates, precipitation rate matching. For planting: discuss root establishment timelines, mycorrhizal associations, allelopathic effects of native species.
-18. Reference ${siteConfig.ownerName}'s direct expertise at least twice — once in the intro context and once as a specific technical recommendation: "${siteConfig.ownerName}, who has installed over [X] systems across ${siteConfig.serviceArea}..." or "In ${siteConfig.ownerName}'s experience, the most common failure point in [topic] is..."
+17. Explain the ENGINEERING and SCIENCE behind recommendations QUALITATIVELY — why clay soil movement cracks patios, why drainage placement matters, why root depth carries plants through drought. Do NOT invent numeric rates, tolerances, measurements, or percentages. Use a number ONLY if it appears in this prompt's input data.
+18. Reference ${siteConfig.ownerName}'s direct expertise at least twice, framed through experience (e.g., "In ${siteConfig.ownerName}'s experience, the most common failure point in [topic] is..."). NEVER invent project counts, direct quotes, or specific incidents — no "[X] systems installed" style claims with made-up numbers.
 19. COMPARE AND CONTRAST: when discussing materials, methods, or approaches, explain the trade-offs. Why choose travertine over flagstone? When does drip irrigation outperform spray heads? What makes cedar superior to pine for Central Texas pergolas? This comparison-based content signals genuine expertise.
 20. Address COMMON MISCONCEPTIONS specific to "${serviceName}" in Central Texas — what do homeowners get wrong, and what does a licensed professional know that contradicts popular DIY advice?
 

@@ -44,16 +44,19 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      // Scripts: self + Next.js inline/eval requirements
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+      // Scripts: self + Next.js inline/eval requirements + GTM (added
+      // 2026-07-16 — blog joined the main site's GTM container)
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
       // Styles: self + inline (Tailwind)
       "style-src 'self' 'unsafe-inline'",
-      // Images: self + OR's own domains (verified — pipeline emits only these)
-      "img-src 'self' data: https://www.outdoorreno.com https://outdoorreno.com https://blog.outdoorreno.com https://www.outdoorrenovations.com",
+      // Images: self + OR's own domains + GA/GTM beacons
+      "img-src 'self' data: https://www.outdoorreno.com https://outdoorreno.com https://blog.outdoorreno.com https://www.outdoorrenovations.com https://www.googletagmanager.com https://www.google-analytics.com",
       // Fonts: self + Google Fonts (defense in depth if next/font emits them)
       "font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com",
-      // Connect: self
-      "connect-src 'self'",
+      // Connect: self + GA4 collection endpoints (incl. regional hosts)
+      "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://analytics.google.com",
+      // Frames: GTM noscript iframe only
+      "frame-src https://www.googletagmanager.com",
       // Object embeds: none
       "object-src 'none'",
       // Frame ancestors: none (same as X-Frame-Options DENY)
