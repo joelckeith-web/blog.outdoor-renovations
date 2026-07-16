@@ -1,21 +1,19 @@
-name: Weekly Weather Blog Posts
+name: Weekly Storm Guide Update
 
+# 2026-07-16: weather posts consolidated into the Central Texas storm prep
+# guide. This workflow no longer creates posts — it patches the guide's
+# CURRENT-CONDITIONS block in place via scripts/update-storm-guide.ts
+# (tightened trigger: NWS watch/warning, 1.5"+ rain, or 40mph+ gusts).
 on:
-  # PAUSED 2026-07-16: weather posts consolidated into the Central Texas storm
-  # prep guide (content/posts/2026-07-16-central-texas-storm-prep-drainage-guide.md).
-  # Re-enable only after the generator is rebuilt to patch the guide's
-  # CURRENT-CONDITIONS section in place instead of creating new dated posts.
-  # schedule:
-  #   - cron: '0 12 * * 1'  # Monday 6 AM CT
-  #   - cron: '0 12 * * 4'  # Thursday 6 AM CT
+  schedule:
+    # Monday 6 AM CT (12 PM UTC)
+    - cron: '0 12 * * 1'
+    # Thursday 6 AM CT (12 PM UTC)
+    - cron: '0 12 * * 4'
   workflow_dispatch:
     inputs:
-      city:
-        description: 'Override target city (optional)'
-        required: false
-        type: string
       dry_run:
-        description: 'Generate locally only (no push)'
+        description: 'Update locally only (no push)'
         required: false
         type: boolean
         default: false
@@ -24,7 +22,7 @@ permissions:
   contents: write
 
 jobs:
-  generate-weather-post:
+  update-storm-guide:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -43,29 +41,17 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Generate weather blog post
+      - name: Update storm guide current conditions
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_OWNER: joelckeith-web
           GITHUB_REPO: blog.outdoor-renovations
           GITHUB_BRANCH: main
         run: |
-          CITY_INPUT="${{ inputs.city }}"
           DRY_RUN="${{ inputs.dry_run }}"
-          CMD="npx tsx scripts/generate-blog.ts --type weather"
-          if [ -n "$CITY_INPUT" ]; then
-            CMD="$CMD --city \"$CITY_INPUT\""
-          fi
+          CMD="npx tsx scripts/update-storm-guide.ts"
           if [ "$DRY_RUN" != "true" ]; then
             CMD="$CMD --push"
           fi
           echo "Running: $CMD"
           eval $CMD
-
-      - name: Log result
-        if: success()
-        run: |
-          echo "✅ Weather blog post generated and published"
-          echo "Posts in repo:"
-          ls -la content/posts/ | tail -5

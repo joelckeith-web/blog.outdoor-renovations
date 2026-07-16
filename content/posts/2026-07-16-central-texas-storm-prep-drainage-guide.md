@@ -40,7 +40,7 @@ status: "published"
 ---
 
 <!-- CURRENT-CONDITIONS:START -->
-**Current conditions:** No active severe weather alerts for the Austin area right now. This guide is updated when significant weather approaches — check back before the next storm, or use the prep checklist below any time.
+**Current conditions (updated July 16, 2026):** Storms are in the Austin-area forecast for July 16–July 22, 2026. Run the before-a-storm checklist below, and walk the property afterward while the water lines are still visible.
 <!-- CURRENT-CONDITIONS:END -->
 
 Central Texas weather doesn't ease into anything. Months of drought bake the soil hard, then a single storm system drops several inches of rain in an afternoon. The ground can't absorb it, the runoff moves fast, and landscapes that weren't built for it pay the price — washed-out beds, flooded patios, leaning fences, and water against the foundation.
