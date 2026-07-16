@@ -1,4 +1,18 @@
 {
   "framework": "nextjs",
-  "installCommand": "npm install --legacy-peer-deps"
+  "installCommand": "npm install --legacy-peer-deps",
+  "redirects": [
+    {
+      "source": "/blog/:path*",
+      "has": [{ "type": "host", "value": "blog.outdoorreno.com" }],
+      "destination": "https://www.outdoorreno.com/blog/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "blog.outdoorreno.com" }],
+      "destination": "https://www.outdoorreno.com/blog/:path*",
+      "permanent": true
+    }
+  ]
 }
