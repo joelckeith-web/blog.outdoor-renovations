@@ -3,6 +3,12 @@
   "installCommand": "npm install --legacy-peer-deps",
   "redirects": [
     {
+      "source": "/",
+      "has": [{ "type": "host", "value": "blog.outdoorreno.com" }],
+      "destination": "https://www.outdoorreno.com/blog",
+      "permanent": true
+    },
+    {
       "source": "/blog/:path*",
       "has": [{ "type": "host", "value": "blog.outdoorreno.com" }],
       "destination": "https://www.outdoorreno.com/blog/:path*",
