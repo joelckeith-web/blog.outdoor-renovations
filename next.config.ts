@@ -103,6 +103,7 @@ const consolidatedWeatherSlugs = [
   "circle-c-ranch-storm-damage-drainage-solutions-after-2-88-rain",
   "travis-heights-storm-prep-protect-drainage-before-this-week-s-rain",
   "westlake-hills-storm-prep-protect-drainage-before-rain-hits",
+  "dripping-springs-flood-watch-protect-your-yard-before-the-heat-hits",
 ];
 
 const nextConfig: NextConfig = {
