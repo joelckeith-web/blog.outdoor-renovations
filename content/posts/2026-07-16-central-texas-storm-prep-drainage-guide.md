@@ -51,13 +51,13 @@ This guide covers how to prepare your landscape before a storm, what to check af
 
 Three things make this region unique:
 
-- **Flash-flood terrain.** Much of the Hill Country drains through steep, rocky canyons where rainwater picks up speed instead of soaking in. Creeks that are dry in July can run hard within an hour of a storm.
+- **Flash-flood terrain.** Central Texas sits in what hydrologists call [Flash Flood Alley](https://www.texasflood.org), one of the most flash-flood-prone regions in North America. Much of the Hill Country drains through steep, rocky canyons where rainwater picks up speed instead of soaking in — creeks that are dry in July can run hard within an hour of a storm.
 - **Expansive clay soil.** Large parts of the Austin area sit on clay that swells when wet and shrinks when dry. That movement stresses patios, walkways, retaining walls, and foundations — and it gets worse when drainage lets water pool in the wrong places.
 - **Drought-hardened ground.** After a dry stretch, soil sheds water like pavement. The first big storm after a drought produces far more runoff than the same rain on softer ground, which is why erosion damage often comes early in storm season.
 
 ## Before the Storm: A Prep Checklist
 
-Most storm damage is preventable with an hour or two of work before the weather arrives:
+Most storm damage is preventable with an hour or two of work before the weather arrives. When storms are in the forecast — the [National Weather Service Austin/San Antonio office](https://www.weather.gov/ewx/) posts watches and warnings for the whole metro — run this list:
 
 1. **Clear gutters, downspouts, and drain inlets.** Blocked outlets force water to find its own path — usually through a planting bed or against your foundation.
 2. **Walk your swales and channels.** If your property has graded swales or a dry creek bed, clear out leaves, mulch, and debris so water can move.
@@ -72,11 +72,11 @@ Once it's safe to be outside, walk the property methodically:
 
 - **Water paths.** Note where water flowed, pooled, or cut channels — wet soil lines and displaced mulch tell the story. This map is the most valuable drainage-planning information you can collect, and it disappears within a day or two.
 - **Foundation line.** Check for pooling or soil washout against the house. Water sitting at the foundation is the one problem that should never wait.
-- **Slopes and walls.** Look for new soil movement, exposed roots, leaning fence posts, or bulging in retaining walls. Small movement now is how walls announce bigger failures later.
+- **Slopes and walls.** Look for new soil movement, exposed roots, leaning fence posts, or bulging in retaining walls. Small movement now is how walls announce bigger failures later — our [hardscaping team](https://www.outdoorreno.com/services/hardscaping) rebuilds more walls that "moved a little last year" than walls that failed without warning.
 - **Trees.** Check for cracked limbs, root-plate lift (soil mounding on one side of the trunk), and split branch unions.
 - **Hardscape.** Standing water on patios and walkways that used to drain means the base or the grade has shifted.
 
-If a storm exposed a real problem — water against the foundation, a leaning wall, serious erosion — document it with photos while the evidence is fresh.
+If a storm exposed a real problem — water against the foundation, a leaning wall, serious erosion — document it with photos while the evidence is fresh. And if keeping up with seasonal prep isn't how you want to spend weekends, our [property management programs](https://www.outdoorreno.com/services/property-management) build storm prep and recovery checks into the regular care schedule.
 
 ## Long-Term Fixes: Drainage That Ends the Cycle
 
@@ -87,7 +87,7 @@ Storm prep gets easier every year when the landscape itself is built to move wat
 - **Swales and dry creek beds.** Shallow, often landscaped channels that give storm water an attractive designated route instead of letting it choose its own.
 - **Rain-ready irrigation.** Smart controllers with rain and soil-moisture sensors stop watering when weather is doing the job — so your soil has room to absorb the storm.
 
-These systems work together, and they work best when designed as part of the whole landscape rather than bolted on after a flood. Our [irrigation and drainage team](https://www.outdoorreno.com/services/irrigation-drainage) designs storm-water management into projects from the first site plan.
+These systems work together, and they work best when designed as part of the whole landscape rather than bolted on after a flood. Our [irrigation and drainage team](https://www.outdoorreno.com/services/irrigation-drainage) designs storm-water management into projects from the first site plan — and if you're budgeting a larger project, our [guide to landscape design costs in Austin](/blog/landscape-design-cost-austin) covers what drainage work runs as part of a full design.
 
 ## Neighborhood Storm Profiles
 
@@ -95,43 +95,43 @@ Storm behavior isn't uniform across the Austin area. Here's what to watch for wh
 
 ### Westlake Hills
 
-Steep terrain with thin soil over limestone. Runoff moves fast and downhill lots receive their uphill neighbors' water. Watch for: slope erosion, washout along driveways, and water cutting under fences. Slope stabilization and interception drains (catching water at the top of the slope) matter more here than anywhere else.
+Steep terrain with thin soil over limestone. Runoff moves fast and downhill lots receive their uphill neighbors' water. Watch for: slope erosion, washout along driveways, and water cutting under fences. Slope stabilization and interception drains (catching water at the top of the slope) matter more here than anywhere else — it's the most common drainage work we do in [Westlake Hills](https://www.outdoorreno.com/locations/westlake-hills).
 
 ### Rollingwood
 
-Established lots with mature trees near creek corridors. Watch for: limb damage over structures, water collecting on flatter sections, and runoff concentrating where lots drain toward the creek. Mature-tree care before storm season is the highest-value prep.
+Established [Rollingwood](https://www.outdoorreno.com/locations/rollingwood) lots with mature trees near creek corridors. Watch for: limb damage over structures, water collecting on flatter sections, and runoff concentrating where lots drain toward the creek. Mature-tree care before storm season is the highest-value prep.
 
 ### Barton Creek
 
-Properties bordering the greenbelt and canyon terrain deal with fast-moving runoff and slope edges. Watch for: erosion at the edges of maintained areas and debris flow from natural areas onto the landscape after hard rain.
+[Barton Creek](https://www.outdoorreno.com/locations/barton-creek) properties bordering the greenbelt and canyon terrain deal with fast-moving runoff and slope edges. Watch for: erosion at the edges of maintained areas and debris flow from natural areas onto the landscape after hard rain.
 
 ### Lakeway
 
-Rocky, sloped lots above Lake Travis. Thin soil sheds water quickly, and what leaves your property moves at speed. Watch for: gravel and mulch migration, erosion channels on slopes, and retaining-wall stress after saturating rains.
+Rocky, sloped [Lakeway](https://www.outdoorreno.com/locations/lakeway) lots above Lake Travis. Thin soil sheds water quickly, and what leaves your property moves at speed. Watch for: gravel and mulch migration, erosion channels on slopes, and retaining-wall stress after saturating rains.
 
 ### Bee Cave
 
-Hill Country ridge terrain mixing established landscapes with newer construction, where compacted builder soil absorbs almost nothing. Watch for: standing water on newer lots, runoff concentration between homes, and wind exposure on ridgelines.
+[Bee Cave](https://www.outdoorreno.com/locations/bee-cave)'s Hill Country ridge terrain mixes established landscapes with newer construction, where compacted builder soil absorbs almost nothing. Watch for: standing water on newer lots, runoff concentration between homes, and wind exposure on ridgelines.
 
 ### Dripping Springs
 
-Larger properties, caliche soils, and low-water creek crossings in a region known for flash flooding. Watch for: water moving across acreage in sheets, driveway and crossing washouts, and erosion where native areas meet maintained landscape.
+Larger [Dripping Springs](https://www.outdoorreno.com/locations/dripping-springs) properties, caliche soils, and low-water creek crossings in a region known for flash flooding — check [ATX Floods](https://www.atxfloods.com) for closed crossings before driving after heavy rain. Watch for: water moving across acreage in sheets, driveway and crossing washouts, and erosion where native areas meet maintained landscape.
 
 ### Steiner Ranch
 
-Canyon-edge lots with significant elevation change. Watch for: slope erosion below the house pad, water concentrating in side-yard channels, and stress on terraced walls.
+[Steiner Ranch](https://www.outdoorreno.com/locations/steiner-ranch)'s canyon-edge lots carry significant elevation change. Watch for: slope erosion below the house pad, water concentrating in side-yard channels, and stress on terraced walls.
 
 ### Circle C Ranch
 
-Flatter terrain in southwest Austin with clay-heavy soil. Water arrives with less speed but leaves slowly. Watch for: standing water in low spots, soggy turf that stays saturated for days, and pooling against foundations and patio edges.
+[Circle C Ranch](https://www.outdoorreno.com/locations/circle-c-ranch) sits on flatter terrain in southwest Austin with clay-heavy soil. Water arrives with less speed but leaves slowly. Watch for: standing water in low spots, soggy turf that stays saturated for days, and pooling against foundations and patio edges.
 
 ### Travis Heights
 
-Older central Austin neighborhood with mature tree canopy and clay soil. Watch for: limb risk over roofs and vehicles, aging drainage patterns that pre-date modern grading, and water finding paths along old fence lines and walkways.
+[Travis Heights](https://www.outdoorreno.com/locations/travis-heights) is an older central Austin neighborhood with mature tree canopy and clay soil. Watch for: limb risk over roofs and vehicles, aging drainage patterns that pre-date modern grading, and water finding paths along old fence lines and walkways.
 
 ### Tarrytown
 
-Flat, clay-soil lots under some of Austin's oldest oak canopy. Watch for: slow-draining turf, water pooling in bed areas, and storm stress on heritage trees — protecting the canopy is the priority; everything else is replaceable.
+Flat, clay-soil [Tarrytown](https://www.outdoorreno.com/locations/tarrytown) lots sit under some of Austin's oldest oak canopy. Watch for: slow-draining turf, water pooling in bed areas, and storm stress on heritage trees — protecting the canopy is the priority; everything else is replaceable.
 
 ## Frequently Asked Questions
 
