@@ -15,7 +15,7 @@ export function ArticleSchema({ post }: { post: BlogPost }) {
     headline: post.frontmatter.title,
     description: post.frontmatter.metaDescription,
     datePublished: post.frontmatter.publishDate,
-    dateModified: post.frontmatter.publishDate,
+    dateModified: post.frontmatter.lastUpdated || post.frontmatter.publishDate,
     author: {
       "@type": "Organization",
       name: siteConfig.companyName,

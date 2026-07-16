@@ -60,7 +60,7 @@ Spring reveals your property's true character. Those areas where water pools aft
 
 This timing also aligns perfectly with Central Texas growing seasons. With design work completed by summer, you can install [hardscaping in Westlake Hills](https://outdoorreno.com/services/hardscaping/westlake-hills) during the warmer months and schedule major plantings for the fall window when root establishment is optimal.
 
-The mature tree canopy in Westlake Hills creates additional planning challenges. Heritage oaks and cedar elms require specific root zone protection during construction. Our designs account for critical root zones, which extend 1.5 times the tree's canopy diameter according to International Society of Arboriculture standards.
+The mature tree canopy in Westlake Hills creates additional planning challenges. Heritage oaks and cedar elms require specific root zone protection during construction. Our designs account for critical root zones that extend well beyond the visible canopy, protecting the roots that keep mature trees healthy through construction.
 
 **Key Takeaway:** Spring observation reveals drainage patterns and growing conditions that inform better design decisions. Early planning ensures installation happens during optimal weather windows for both hardscape construction and plant establishment.
 
@@ -76,7 +76,7 @@ Native vegetation provides clues about microclimates and soil conditions. Areas 
 
 ## The Science Behind Successful Hill Country Design
 
-Effective landscape design in Westlake Hills requires understanding the engineering principles that govern water movement, soil mechanics, and plant establishment. Our designs incorporate evapotranspiration (ET) rates specific to Central Texas, which average 0.25 inches per day during summer months according to Texas A&M AgriLife Extension data.
+Effective landscape design in Westlake Hills requires understanding the engineering principles that govern water movement, soil mechanics, and plant establishment. Our designs account for the intense evaporation and plant water demand of a Central Texas summer, so plantings and irrigation are matched to real conditions rather than averages from milder climates.
 
 For drainage calculations, we use the Rational Method to determine peak runoff rates: Q = CiA, where C is the runoff coefficient (0.15 for planted areas, 0.90 for impervious surfaces), i is rainfall intensity, and A is drainage area. Austin's 10-year storm intensity is 5.5 inches per hour, creating significant runoff volumes that must be managed through engineered solutions.
 
@@ -148,7 +148,7 @@ For modern aesthetics, we integrate steel elements through our [metal fabricatio
 
 ## Irrigation Design for Water Efficiency
 
-Austin Water's mandatory restrictions require irrigation systems that maximize efficiency while maintaining landscape health. Our irrigation designs incorporate EPA WaterSense principles and smart controller technology that can reduce water usage by 30-50% compared to conventional timer-based systems.
+Austin Water's mandatory restrictions require irrigation systems that maximize efficiency while maintaining landscape health. Our irrigation designs use smart controller technology with rain and soil-moisture sensors, which typically cuts outdoor water use by 20-50% compared to conventional timer-based systems.
 
 Hydrozone design groups plants with similar water requirements, allowing precise irrigation scheduling for each area. Established natives might receive deep, infrequent watering while newly installed areas need frequent, shallow applications during establishment.
 
@@ -184,13 +184,13 @@ Quality control checkpoints ensure work meets design specifications and industry
 
 ## Investment Value and Long-Term Benefits
 
-Professional landscape design delivers measurable returns on investment beyond aesthetic improvements. The National Association of Landscape Professionals reports that quality landscaping provides 100-200% return on investment for residential properties, with properly designed systems requiring minimal long-term maintenance.
+Professional landscape design delivers returns beyond aesthetic improvements. A well-designed landscape adds real property value and curb appeal, and properly designed systems require far less long-term maintenance than pieced-together ones.
 
 Water-efficient designs reduce ongoing irrigation costs while complying with municipal restrictions. Smart irrigation systems typically pay for themselves within 3-5 years through reduced water usage, while drought-tolerant native plantings eliminate irrigation needs once established.
 
 Properly designed drainage systems prevent expensive foundation repairs and erosion damage. The cost of professional design and installation is typically 10-20% of potential damage costs from uncontrolled surface water and poor drainage.
 
-Energy efficiency benefits include strategic tree placement for summer shading and winter solar gain. Mature shade trees can reduce cooling costs by 20-30% according to EPA data, while also increasing property values and providing environmental benefits like carbon sequestration and air quality improvement.
+Energy efficiency benefits include strategic tree placement for summer shading and winter solar gain. Mature shade trees noticeably reduce summer cooling costs, while also increasing property values and improving the comfort of outdoor spaces in the hottest months.
 
 ## Getting Started: Spring Planning for Fall Implementation
 

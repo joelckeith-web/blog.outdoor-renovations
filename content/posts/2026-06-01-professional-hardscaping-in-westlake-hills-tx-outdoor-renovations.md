@@ -228,7 +228,7 @@ Winter freeze-thaw cycles rarely affect properly installed hardscaping in Centra
 
 ## Investment Value and ROI
 
-Quality hardscaping provides exceptional return on investment for Westlake Hills properties. The [National Association of Landscape Professionals](https://www.landscapeprofessionals.org) reports that quality landscaping delivers 100-200% return on investment, with hardscaping contributing the highest values.
+Quality hardscaping is one of the strongest investments a Westlake Hills property can make — it adds permanent, usable outdoor living space in a market where outdoor amenities directly influence home values.
 
 ### Property Value Impact
 

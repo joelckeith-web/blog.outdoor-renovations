@@ -73,7 +73,7 @@ Native Texas plants have evolved specific adaptations for these conditions. Texa
 
 Our [landscape design](https://outdoorreno.com/services/landscape-design) process includes detailed soil analysis to determine specific growing conditions across your property. We test for pH, organic matter content, drainage rates, and compaction levels. This data drives plant placement decisions that maximize establishment success rates.
 
-The Texas A&M AgriLife Extension provides excellent research on [native plant performance in Central Texas conditions](https://agrilifeextension.tamu.edu). Their studies show that properly selected native plants require 50-70% less water than traditional landscape plants once established.
+Properly selected native plants need significantly less water than traditional landscape plants once established — they evolved for this soil and this rainfall, so they thrive on conditions that leave imported species struggling.
 
 Kyle Stoutenger's experience shows that the most common mistake other contractors make is assuming all native plants perform equally well in any Central Texas location. "Lindheimer muhly grass thrives in well-drained limestone soils but struggles in clay depressions," he notes. "Understanding these nuances makes the difference between a landscape that establishes successfully and one that requires constant replacement."
 
@@ -83,7 +83,7 @@ Kyle Stoutenger's experience shows that the most common mistake other contractor
 
 Installing plants correctly in Westlake Hills requires specialized techniques that address both limestone hardpan and expansive clay challenges. Standard planting methods often fail because they don't account for these extreme soil variations.
 
-For limestone areas, we use percussion drilling equipment to create planting holes that penetrate rock layers. Hand digging rarely reaches sufficient depth for proper root development. The Lady Bird Johnson Wildflower Center's research shows that [root penetration depth directly correlates with drought survival rates](https://www.wildflower.org) in Central Texas natives.
+For limestone areas, we use percussion drilling equipment to create planting holes that penetrate rock layers. Hand digging rarely reaches sufficient depth for proper root development — and in Central Texas, deeper roots are what carry a plant through drought.
 
 Clay soil areas require different approaches entirely. Houston Black clay series soils expand and contract dramatically with moisture changes, creating challenging conditions for root establishment. We install plants in raised beds or amended soil mixtures that provide consistent drainage and prevent root suffocation during wet periods.
 
@@ -99,7 +99,7 @@ Austin Water enforces Stage 1-4 mandatory water restrictions year-round, making 
 
 Native and adapted plants provide the foundation for water-efficient landscapes. Once established, species like cedar elm and live oak require no supplemental irrigation except during extreme drought conditions. This drought tolerance develops over 1-2 growing seasons as root systems expand and adapt to local moisture patterns.
 
-The EPA's WaterSense program provides [guidelines for water-efficient landscape design](https://www.epa.gov/watersense) that we incorporate into every project. Their research shows that proper plant selection and placement can reduce landscape water use by 50% or more compared to traditional designs.
+We design for water efficiency on every project: proper plant selection and placement dramatically reduces landscape water use compared to traditional designs, and it shows up on the utility bill every month after.
 
 Grouping plants by water requirements creates irrigation zones that maximize efficiency while meeting each species' specific needs. Drought-tolerant natives occupy areas with minimal irrigation, while higher-water plants cluster near natural drainage areas or in spots that receive additional moisture from runoff.
 
@@ -149,7 +149,7 @@ Root development occurs most rapidly during mild temperature periods when plants
 
 Natural rainfall patterns during spring reduce irrigation requirements while providing deep moisture penetration that encourages strong root development. This week's severe thunderstorms, while potentially problematic for erosion control, provide the deep soil saturation that newly planted trees and shrubs need for rapid establishment.
 
-The National Weather Service data shows that [spring moisture patterns in Central Texas](https://www.weather.gov) are generally favorable for plant establishment, with sufficient rainfall to support new plantings without excessive waterlogging that can damage root systems.
+Spring moisture patterns in Central Texas are generally favorable for plant establishment — enough rainfall to support new plantings without the extended waterlogging that damages root systems.
 
 Soil temperatures during spring planting season promote beneficial microbial activity that supports plant establishment. Mycorrhizal fungi that form symbiotic relationships with plant roots are most active during moderate temperature periods, creating partnerships that improve nutrient uptake and drought tolerance.
 
@@ -157,7 +157,7 @@ Professional installation scheduling takes advantage of these seasonal condition
 
 ## ROI and Property Value Enhancement
 
-Quality landscaping delivers 100-200% return on investment according to National Association of Landscape Professionals research. Professional softscaping contributes significantly to this return through both immediate curb appeal improvements and long-term property value enhancement.
+Professional softscaping pays off twice: immediate curb appeal, and long-term property value from a landscape that matures well instead of needing constant replacement.
 
 Mature native landscapes require minimal ongoing maintenance costs compared to traditional high-maintenance designs. This cost advantage compounds over time, making professional plant selection and installation a wise financial decision for long-term property ownership.
 

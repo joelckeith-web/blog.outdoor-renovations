@@ -25,7 +25,7 @@ schema:
     - question: "What topics does the Outdoor Renovations blog cover?"
       answer: "Our blog covers landscape design, hardscaping, irrigation systems, outdoor lighting, seasonal lawn care, and property maintenance — all tailored to Austin's unique climate and soil conditions."
     - question: "How does weather influence your blog content?"
-      answer: "We use real-time National Weather Service data for Central Texas to trigger relevant posts. When a heat wave, freeze warning, or heavy rain event hits the Austin area, we publish timely advice so homeowners can protect their landscapes."
+      answer: "We track real-time National Weather Service data for Central Texas. When a heat wave, freeze warning, or heavy rain event approaches the Austin area, we update our Central Texas storm prep guide with timely advice so homeowners can protect their landscapes."
     - question: "Which areas does Outdoor Renovations serve?"
       answer: "We serve homeowners across the greater Austin metro including Austin, Westlake Hills, Bee Cave, Lakeway, Cedar Park, Round Rock, Pflugerville, Georgetown, Dripping Springs, and surrounding Central Texas communities."
     - question: "How often are new blog posts published?"
@@ -43,7 +43,7 @@ Welcome to the Outdoor Renovations blog — your go-to resource for landscaping 
 
 Every week, we publish two types of content designed to keep your property in top shape:
 
-**Weather-triggered posts** respond directly to current and forecasted conditions in the Austin metro. When the National Weather Service issues a heat advisory, freeze warning, or flash flood watch, we publish practical guidance so you can act before damage happens — not after.
+**Weather-aware guidance** responds directly to current and forecasted conditions in the Austin metro. When the National Weather Service issues a heat advisory, freeze warning, or flash flood watch, we update our [Central Texas storm prep guide](/blog/central-texas-storm-prep-drainage-guide) so you can act before damage happens — not after.
 
 **Service deep-dives** rotate through our core offerings — [landscape design](https://www.outdoorrenovations.com/services/landscape-design), [hardscaping](https://www.outdoorrenovations.com/services/hardscaping), irrigation, outdoor lighting, and seasonal maintenance — with city-specific tips for communities across our service area.
 

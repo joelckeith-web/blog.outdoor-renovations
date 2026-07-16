@@ -68,10 +68,55 @@ const securityHeaders = [
   },
 ];
 
+/**
+ * 2026-07-16 weather-post consolidation: 30 weather-triggered posts merged
+ * into the Central Texas storm prep guide. Old slugs 301/308 to the guide.
+ */
+const consolidatedWeatherSlugs = [
+  "storm-damage-assessment-heavy-rain-prep-in-westlake-hills",
+  "bee-cave-storm-prep-wind-damage-check-severe-weather-protection",
+  "preparing-lakeway-properties-for-severe-storm-season-drainage-protection",
+  "severe-storm-recovery-prep-lakeway-drainage-solutions-this-week",
+  "storm-damage-more-rain-coming-dripping-springs-emergency-guide",
+  "lakeway-storm-prep-protect-your-landscape-before-april-rains",
+  "storm-proof-your-lakeway-landscape-before-april-s-severe-weather",
+  "pre-storm-drainage-prep-for-bee-cave-heavy-rain-coming-april-2026",
+  "prepare-your-lakeway-property-for-severe-storms-this-week",
+  "prepare-your-bee-cave-landscape-for-heavy-rain-and-storm-season",
+  "storm-proofing-dripping-springs-prepare-for-severe-weather-this-week",
+  "storm-ready-drainage-dripping-springs-april-storm-preparation-guide",
+  "storm-ready-drainage-prepare-your-tarrytown-landscape-for-heavy-rain",
+  "severe-storm-prep-for-tarrytown-properties-april-27-may-3-2026",
+  "severe-storm-preparation-barton-creek-drainage-landscape-protection",
+  "storm-damage-recovery-preparing-for-more-rain-this-week",
+  "storm-ready-drainage-preparing-steiner-ranch-properties-may-7-13",
+  "storm-recovery-prep-guide-for-circle-c-ranch-homeowners",
+  "travis-heights-storm-prep-heavy-rain-flooding-protection-this-week",
+  "severe-storms-hit-westlake-hills-prep-your-landscape-for-week-of-rain",
+  "storm-recovery-prep-lakeway-drainage-solutions-after-0-69-rain",
+  "storm-damage-recovery-heavy-rain-prep-for-bee-cave-properties",
+  "severe-storm-prep-protecting-your-dripping-springs-landscape",
+  "prepare-your-tarrytown-landscape-for-severe-storms-this-week",
+  "barton-creek-storm-recovery-urgent-drainage-repairs-after-1-75-rain",
+  "storm-recovery-preparation-guide-for-rollingwood-properties",
+  "storm-prep-for-steiner-ranch-drainage-outdoor-structure-protection",
+  "circle-c-ranch-storm-damage-drainage-solutions-after-2-88-rain",
+  "travis-heights-storm-prep-protect-drainage-before-this-week-s-rain",
+  "westlake-hills-storm-prep-protect-drainage-before-rain-hits",
+];
+
 const nextConfig: NextConfig = {
   output: "standalone",
   images: {
     domains: ["blog.outdoorreno.com", "outdoorreno.com"],
+  },
+
+  async redirects() {
+    return consolidatedWeatherSlugs.map((slug) => ({
+      source: `/blog/${slug}`,
+      destination: "/blog/central-texas-storm-prep-drainage-guide",
+      permanent: true,
+    }));
   },
 
   // Apply security headers to all routes

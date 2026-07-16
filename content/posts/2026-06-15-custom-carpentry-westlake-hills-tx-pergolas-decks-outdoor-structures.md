@@ -165,7 +165,7 @@ Lighting integration transforms carpentry projects into evening entertainment sp
 
 Plant selection around wooden structures affects maintenance requirements. Aggressive vines can damage wood surfaces, while proper plant choices provide natural cooling and privacy enhancement. Native species like cedar elm and live oak complement wooden structures while thriving in Central Texas conditions.
 
-According to the [National Association of Landscape Professionals](https://www.landscapeprofessionals.org), quality landscaping delivers 100-200% return on investment, with custom structures adding significant value to outdoor living spaces.
+Custom structures add real value to outdoor living spaces — a well-built pergola or deck extends the home's usable square footage and is one of the features buyers notice first.
 
 Ready to create the custom carpentry project that transforms your Westlake Hills outdoor space? Outdoor Renovations brings the expertise and attention to detail that ensures your investment withstands Central Texas weather while providing years of enjoyment. Call Kyle Stoutenger at (512) 743-0570 to discuss your project and schedule a consultation. Our team is ready to turn your outdoor dreams into reality with structures built to last.
 

@@ -117,7 +117,7 @@ Fire pits and outdoor fireplaces need special consideration for wind patterns an
 
 Gas line installation for fire features requires licensed plumbers and city permits. Underground gas lines must avoid conflicts with irrigation systems, foundation plantings, and future landscape modifications. [Custom carpentry](https://outdoorreno.com/services/custom-carpentry/westlake-hills) elements like pergolas and outdoor bars integrate with hardscape foundations to create cohesive outdoor living spaces.
 
-The National Association of Landscape Professionals reports that outdoor kitchens provide some of the highest return on investment among landscape improvements, often returning 100-200% of installation costs in property value increases.
+Outdoor kitchens are among the most requested features in Central Texas landscape projects — they extend the home's living space and are a standout amenity when a property sells.
 
 ## Integration with Landscape Lighting Systems
 
@@ -163,7 +163,7 @@ Site preparation costs depend on existing conditions and accessibility. Properti
 
 Retaining wall costs depend on height, material selection, and engineering requirements. Simple segmental walls start around $25-35 per square foot, while natural stone walls with complex drainage systems can exceed $75-100 per square foot. These investments typically provide excellent returns through increased property values and expanded usable space.
 
-The National Association of Landscape Professionals reports that quality landscaping improvements, including professional hardscaping, typically return 100-200% of their installation costs in property value increases. This return on investment often exceeds other home improvement projects and provides immediate lifestyle benefits.
+Quality landscaping improvements, including professional hardscaping, add lasting property value alongside immediate lifestyle benefits — outdoor space you use every week, not a renovation you only see at resale.
 
 **Key Takeaway:** Professional hardscape installation represents a significant investment that provides both immediate lifestyle improvements and long-term property value increases when properly designed and constructed.
 

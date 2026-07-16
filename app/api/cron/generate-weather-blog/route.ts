@@ -110,6 +110,19 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
+  // PAUSED 2026-07-16: weather posts consolidated into the Central Texas storm
+  // prep guide. Do not generate new dated weather posts — re-enable only after
+  // this route is rebuilt to patch the guide's CURRENT-CONDITIONS section in
+  // place (see .github/workflows/weekly-weather-blog.yml for the same pause).
+  const WEATHER_GENERATION_PAUSED: boolean = true;
+  if (WEATHER_GENERATION_PAUSED) {
+    return NextResponse.json({
+      status: "paused",
+      reason:
+        "Weather posts consolidated into /blog/central-texas-storm-prep-drainage-guide (2026-07-16)",
+    });
+  }
+
   try {
     console.log("[CRON] Starting weather-triggered blog generation...");
 

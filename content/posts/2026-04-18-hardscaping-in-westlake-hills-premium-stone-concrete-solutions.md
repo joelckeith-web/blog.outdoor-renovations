@@ -107,7 +107,7 @@ Another frequent error is ignoring thermal expansion in concrete work. Large con
 
 Retaining wall failures usually stem from poor drainage design behind the wall. Water pressure builds up during storms like this week's forecast, pushing walls over or causing structural failure. Proper wall design includes drainage pipes, filter fabric, and gravel backfill to manage hydrostatic pressure.
 
-Kyle Stoutenger notes: "The biggest mistake I see is homeowners trying to match hardscapes to Pinterest photos without considering our specific soil and climate conditions. What works in California or North Carolina often fails here without proper adaptation."
+The most common mistake we see is homeowners matching hardscapes to Pinterest photos without considering our specific soil and climate conditions. What works in California or North Carolina often fails here without proper adaptation.
 
 Material choices also cause problems. Imported stone that looks beautiful often lacks the thermal properties to handle our climate. Some limestone varieties contain clay that causes spalling and surface deterioration. Local material knowledge prevents these expensive mistakes.
 
@@ -161,7 +161,7 @@ Outdoor kitchens represent major investments starting around $15,000 for basic i
 
 Site access affects pricing significantly. Westlake Hills properties with steep grades, narrow access, or mature tree protection requirements need specialized equipment and careful planning. These factors add costs but prevent damage to existing landscape investments.
 
-Quality landscaping delivers 100-200% return on investment according to the National Association of Landscape Professionals. Hardscaping specifically adds functional outdoor space that extends home living areas and increases property values in competitive markets like Westlake Hills.
+Hardscaping adds functional outdoor space that extends home living areas and increases property values in competitive markets like Westlake Hills.
 
 ## Working with Professional Contractors
 

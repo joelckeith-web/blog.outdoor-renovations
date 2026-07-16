@@ -78,7 +78,7 @@ Spring weather in Central Texas creates optimal conditions for hardscaping insta
 
 This week's severe weather forecast — with multiple days of heavy precipitation expected — highlights a critical but often overlooked aspect of professional hardscaping: storm water management. Hardscaping isn't just about pretty patios. It's infrastructure that protects your property investment.
 
-**Drainage Integration**: Professional hardscaping projects incorporate French drains, area drains, and proper grading to handle Central Texas's intense rainfall events. The [National Weather Service](https://www.weather.gov) reports that Austin metro areas can receive 3-5 inches of rain in single storm events, with flash flooding a constant concern in Hill Country locations.
+**Drainage Integration**: Professional hardscaping projects incorporate French drains, area drains, and proper grading to handle Central Texas's intense rainfall events. Single storms here can drop several inches of rain in an afternoon, and flash flooding is a constant concern in Hill Country locations.
 
 **Permeable Solutions**: Modern hardscaping utilizes permeable pavers and porous concrete systems that allow water infiltration while maintaining structural integrity. These systems reduce surface runoff by 30-50% compared to traditional impervious surfaces, which matters significantly when dealing with Travis County's flash flood potential.
 
@@ -120,7 +120,7 @@ Fifteen years of hardscaping installation in Central Texas has exposed several p
 
 **Misconception #3**: "Natural stone doesn't need maintenance." Reality: Natural stone requires periodic sealing, joint maintenance, and cleaning to maintain appearance and structural integrity. Neglected stone installations can develop weed growth, joint washout, and surface deterioration within 3-5 years.
 
-The [Texas A&M AgriLife Extension](https://agrilifeextension.tamu.edu) provides excellent resources on soil science and drainage principles that contradict much of the DIY hardscaping advice found online.
+Much of the DIY hardscaping advice found online was written for other regions' soils — following it on Central Texas expansive clay is how patios crack in their second summer.
 
 ## Integration with Landscape Systems
 
@@ -138,7 +138,7 @@ Professional hardscaping doesn't exist in isolation — it integrates seamlessly
 
 Quality hardscaping delivers measurable returns on investment, particularly in desirable areas like Lakeway where outdoor living is a year-round lifestyle.
 
-**Documented ROI Data**: According to the [National Association of Landscape Professionals](https://www.landscapeprofessionals.org), quality hardscaping projects typically return 100-200% of their investment in increased property value. Outdoor living spaces have become essential amenities in Central Texas real estate markets.
+**Property Value**: Quality hardscaping adds usable living space and lasting property value. Outdoor living spaces have become essential amenities in Central Texas real estate markets.
 
 **Market Differentiation**: In competitive real estate markets like Lakeway, professional hardscaping creates clear differentiation. Properties with well-designed outdoor living spaces consistently outperform comparable properties without these features.
 

@@ -1,11 +1,13 @@
 name: Weekly Weather Blog Posts
 
 on:
-  schedule:
-    # Monday 6 AM CT (12 PM UTC) — Post 1
-    - cron: '0 12 * * 1'
-    # Thursday 6 AM CT (12 PM UTC) — Post 2
-    - cron: '0 12 * * 4'
+  # PAUSED 2026-07-16: weather posts consolidated into the Central Texas storm
+  # prep guide (content/posts/2026-07-16-central-texas-storm-prep-drainage-guide.md).
+  # Re-enable only after the generator is rebuilt to patch the guide's
+  # CURRENT-CONDITIONS section in place instead of creating new dated posts.
+  # schedule:
+  #   - cron: '0 12 * * 1'  # Monday 6 AM CT
+  #   - cron: '0 12 * * 4'  # Thursday 6 AM CT
   workflow_dispatch:
     inputs:
       city:

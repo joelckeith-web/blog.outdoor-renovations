@@ -10,6 +10,7 @@ export interface BlogFrontmatter {
   title: string;
   slug: string;
   publishDate: string; // YYYY-MM-DD
+  lastUpdated?: string; // YYYY-MM-DD — set on content refresh (current-conditions patches, quarterly updates)
   author: string;
   category:
     | "landscape-design"
