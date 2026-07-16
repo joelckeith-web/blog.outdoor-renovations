@@ -111,7 +111,9 @@ export const siteConfig = {
 
   // URLs
   mainSiteUrl: "https://outdoorreno.com",
-  blogUrl: "https://blog.outdoorreno.com",
+  // Site root the blog is served under (migrated from blog.outdoorreno.com
+  // subdomain 2026-07-16). Post URLs are `${blogUrl}/blog/${slug}`.
+  blogUrl: "https://www.outdoorreno.com",
 
   // Social / Entity Bridge sameAs
   sameAs: [

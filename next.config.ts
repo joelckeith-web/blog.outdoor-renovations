@@ -108,14 +108,23 @@ const consolidatedWeatherSlugs = [
 
 const nextConfig: NextConfig = {
   output: "standalone",
+
+  // 2026-07-16 subdomain → subdirectory migration: the blog serves under
+  // outdoorreno.com/blog via a rewrite in the main site. basePath keeps
+  // every route and asset (/blog/_next/*) under the proxied prefix.
+  // blog.outdoorreno.com now blanket-301s to the main domain (middleware.ts).
+  basePath: "/blog",
+
   images: {
     domains: ["blog.outdoorreno.com", "outdoorreno.com"],
   },
 
   async redirects() {
+    // Sources/destinations are basePath-relative — Next prefixes both
+    // with /blog automatically.
     return consolidatedWeatherSlugs.map((slug) => ({
-      source: `/blog/${slug}`,
-      destination: "/blog/central-texas-storm-prep-drainage-guide",
+      source: `/${slug}`,
+      destination: "/central-texas-storm-prep-drainage-guide",
       permanent: true,
     }));
   },

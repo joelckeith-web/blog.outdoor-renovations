@@ -68,7 +68,7 @@ export default function PostCard({ post }: { post: BlogPost }) {
 
         {/* Title */}
         <h2 className="text-lg font-bold text-brand-dark mb-2 group-hover:text-brand-accent transition-colors line-clamp-2">
-          <Link href={`/blog/${post.slug}`}>{frontmatter.title}</Link>
+          <Link href={`/${post.slug}`}>{frontmatter.title}</Link>
         </h2>
 
         {/* Description */}

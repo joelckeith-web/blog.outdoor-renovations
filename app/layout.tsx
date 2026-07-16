@@ -28,12 +28,13 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.blogUrl),
   alternates: {
-    canonical: "/",
+    // basePath is NOT applied to metadata URLs — spell out /blog
+    canonical: "/blog",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: siteConfig.blogUrl,
+    url: `${siteConfig.blogUrl}/blog`,
     siteName: `${siteConfig.companyName} Blog`,
     title: `Blog | ${siteConfig.companyName}`,
     description: siteConfig.description,

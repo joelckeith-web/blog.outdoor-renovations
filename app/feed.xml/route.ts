@@ -12,14 +12,14 @@ export async function GET() {
   const feed = new Feed({
     title: `${siteConfig.shortName} Blog`,
     description: siteConfig.description,
-    id: siteConfig.blogUrl,
-    link: siteConfig.blogUrl,
+    id: `${siteConfig.blogUrl}/blog`,
+    link: `${siteConfig.blogUrl}/blog`,
     language: "en",
     favicon: `${siteConfig.blogUrl}/favicon.ico`,
     copyright: `© ${new Date().getFullYear()} ${siteConfig.companyName}. All rights reserved.`,
     feedLinks: {
-      rss2: `${siteConfig.blogUrl}/feed.xml`,
-      atom: `${siteConfig.blogUrl}/atom.xml`,
+      rss2: `${siteConfig.blogUrl}/blog/feed.xml`,
+      atom: `${siteConfig.blogUrl}/blog/atom.xml`,
     },
     author: {
       name: siteConfig.shortName,

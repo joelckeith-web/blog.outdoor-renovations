@@ -1,33 +1,39 @@
 import { NextRequest, NextResponse } from "next/server";
 
 /**
- * Middleware: redirect non-canonical hostnames to blog.outdoorreno.com.
- * Prevents duplicate content on blogoutdoor-renovations.vercel.app
- * and any other Vercel preview/alias URLs.
+ * 2026-07-16 subdomain → subdirectory migration.
+ *
+ * The blog now serves at www.outdoorreno.com/blog via a rewrite in the
+ * main site (proxied to this deployment's vercel.app domain, which must
+ * therefore be allowed to serve). blog.outdoorreno.com is retired:
+ * EVERY request to it gets a permanent 301 to the equivalent main-domain
+ * URL so no subdomain URL survives —
+ *   blog.outdoorreno.com/                → www.outdoorreno.com/blog
+ *   blog.outdoorreno.com/blog/<slug>     → www.outdoorreno.com/blog/<slug>
+ *   blog.outdoorreno.com/feed.xml        → www.outdoorreno.com/blog/feed.xml
+ *   blog.outdoorreno.com/sitemap.xml     → www.outdoorreno.com/blog/sitemap.xml
+ *   (any other path)                     → www.outdoorreno.com/blog<path>
  */
-const CANONICAL_HOST = "blog.outdoorreno.com";
+const RETIRED_HOST = "blog.outdoorreno.com";
+const MAIN_ORIGIN = "https://www.outdoorreno.com";
 
 export function middleware(request: NextRequest) {
   const host = request.headers.get("host") || "";
 
-  // Allow canonical hostname and localhost
-  if (host === CANONICAL_HOST || host.startsWith("localhost")) {
-    return NextResponse.next();
+  if (host === RETIRED_HOST) {
+    // NOTE: with basePath "/blog", request.nextUrl.pathname excludes the
+    // basePath for matched routes; use the raw URL path to be safe.
+    const rawPath = new URL(request.url).pathname;
+    const mapped = rawPath.startsWith("/blog")
+      ? rawPath
+      : `/blog${rawPath === "/" ? "" : rawPath}`;
+    const search = new URL(request.url).search;
+    return NextResponse.redirect(`${MAIN_ORIGIN}${mapped}${search}`, 301);
   }
 
-  // Allow Vercel preview deployments (hash-based URLs used for PR previews)
-  if (host.includes("-joelckeith-9717s-projects.vercel.app")) {
-    return NextResponse.next();
-  }
-
-  // Redirect everything else (blogoutdoor-renovations.vercel.app, etc.)
-  // to the canonical blog domain with a 308 permanent redirect
-  const url = request.nextUrl.clone();
-  url.host = CANONICAL_HOST;
-  url.protocol = "https";
-  url.port = "";
-
-  return NextResponse.redirect(url, 308);
+  // Serve for: the vercel.app production domain (proxy origin for the
+  // main site's /blog rewrite), preview deployments, and localhost.
+  return NextResponse.next();
 }
 
 export const config = {

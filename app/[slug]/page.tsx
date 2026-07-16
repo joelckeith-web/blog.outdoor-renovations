@@ -67,7 +67,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       <BreadcrumbSchema
         items={[
           { name: "Home", url: siteConfig.mainSiteUrl },
-          { name: "Blog", url: siteConfig.blogUrl },
+          { name: "Blog", url: `${siteConfig.blogUrl}/blog` },
           {
             name: post.frontmatter.title,
             url: `${siteConfig.blogUrl}/blog/${post.slug}`,
