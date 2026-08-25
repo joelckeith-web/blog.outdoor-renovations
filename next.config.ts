@@ -118,8 +118,13 @@ const nextConfig: NextConfig = {
   // blog.outdoorreno.com now blanket-301s to the main domain (middleware.ts).
   basePath: "/blog",
 
+  // Next 16 deprecated images.domains in favour of remotePatterns. Same two
+  // hosts as before, no widening of what may be optimized.
   images: {
-    domains: ["blog.outdoorreno.com", "outdoorreno.com"],
+    remotePatterns: [
+      { protocol: "https", hostname: "blog.outdoorreno.com" },
+      { protocol: "https", hostname: "outdoorreno.com" },
+    ],
   },
 
   async redirects() {

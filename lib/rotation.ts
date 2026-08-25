@@ -98,7 +98,7 @@ export function getNextServiceAndCity(state: RotationState): {
   const city = serviceAreaCities[state.serviceCityIndex];
 
   // Advance: next service. If all services done, advance city.
-  let nextServiceIndex = (idx + 1) % orderedServices.length;
+  const nextServiceIndex = (idx + 1) % orderedServices.length;
   let nextCityIndex = state.serviceCityIndex;
 
   if (nextServiceIndex === 0) {

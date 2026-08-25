@@ -17,7 +17,7 @@ import { NextRequest, NextResponse } from "next/server";
 const RETIRED_HOST = "blog.outdoorreno.com";
 const MAIN_ORIGIN = "https://www.outdoorreno.com";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const host = request.headers.get("host") || "";
 
   if (host === RETIRED_HOST) {
