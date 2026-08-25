@@ -110,7 +110,12 @@ const consolidatedWeatherSlugs = [
 ];
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  // No `output: "standalone"`. It was vestigial - nothing in this repo consumes
+  // it (no Dockerfile, no self-host target); the blog deploys only to Vercel,
+  // whose adapter builds its own serverless output. Under Next 16 it actively
+  // broke the deploy: Vercel's onBuildComplete hook looks for the Node file
+  // trace (.next/next-server.js.nft.json) that the Turbopack build does not
+  // hand it, and the build fails ENOENT. The main site never set it.
 
   // 2026-07-16 subdomain → subdirectory migration: the blog serves under
   // outdoorreno.com/blog via a rewrite in the main site. basePath keeps
