@@ -2,7 +2,7 @@
 title: "Central Texas Storm Prep & Drainage Guide: Protect Your Landscape Year-Round"
 slug: "central-texas-storm-prep-drainage-guide"
 publishDate: "2026-07-16"
-lastUpdated: "2026-09-28"
+lastUpdated: "2026-10-01"
 author: "Outdoor Renovations"
 category: "irrigation-drainage"
 tags: ["storm preparation", "drainage solutions", "Central Texas landscaping", "flash flood prevention", "French drain", "erosion control", "expansive clay soil", "Austin storm prep", "Hill Country drainage"]
@@ -40,7 +40,7 @@ status: "published"
 ---
 
 <!-- CURRENT-CONDITIONS:START -->
-**Current conditions (updated September 28, 2026):** Storms are in the Austin-area forecast for September 28–October 4, 2026. Run the before-a-storm checklist below, and walk the property afterward while the water lines are still visible.
+**Current conditions (updated October 1, 2026):** The National Weather Service has issued a Flood Watch covering the Austin area (October 1–October 7, 2026). Clear your drain inlets, swales, and downspout outlets now, and skip irrigation until it passes — the prep checklist below covers the rest.
 <!-- CURRENT-CONDITIONS:END -->
 
 Central Texas weather doesn't ease into anything. Months of drought bake the soil hard, then a single storm system drops several inches of rain in an afternoon. The ground can't absorb it, the runoff moves fast, and landscapes that weren't built for it pay the price — washed-out beds, flooded patios, leaning fences, and water against the foundation.
